@@ -4,8 +4,8 @@ import "./sidebar.css";
 // Icons
 import HomeIcon from "@mui/icons-material/Home";
 import PersonIcon from "@mui/icons-material/Person";
-import PersonAddIcon from "@mui/icons-material/PersonAdd";
-import PersonRemoveIcon from "@mui/icons-material/PersonRemove";
+import PersonAddAlt1Icon from "@mui/icons-material/PersonAddAlt1";
+import PersonRemoveAlt1Icon from "@mui/icons-material/PersonRemoveAlt1";
 import SettingsIcon from "@mui/icons-material/Settings";
 
 const Sidebar = () => {
@@ -19,10 +19,26 @@ const Sidebar = () => {
           <HomeIcon className="sidebarIcon" />
           Home
         </li>
+      </ul>
+      <div className="sidebarMenu"></div>
+      <h3 className="sidebarTitle">Personnel</h3>
+      <ul className="sidebarList">
         <li className="sidebarListIcons">
           <PersonIcon className="sidebarIcon" />
-          Personnel
+          Search
         </li>
+        <li className="sidebarListIcons">
+          <PersonAddAlt1Icon className="sidebarIcon" />
+          Add
+        </li>
+        <li className="sidebarListIcons">
+          <PersonRemoveAlt1Icon className="sidebarIcon" />
+          Remove
+        </li>
+      </ul>
+      <div className="sidebarMenu"></div>
+      <h3 className="sidebarTitle">Admin</h3>
+      <ul className="sidebarList">
         <li className="sidebarListIcons">
           <SettingsIcon className="sidebarIcon" />
           Settings

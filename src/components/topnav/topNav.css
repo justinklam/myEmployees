@@ -3,13 +3,14 @@
   height: 50px;
   background-color: white;
   z-index: 999;
+  opacity: 0.9;
   position: sticky;
   top: 0;
 }
 
 .topnavWrapper {
   height: 100%;
-  padding: 0px 2px;
+  padding: 0px 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -19,7 +20,7 @@
   font-weight: bold;
   font-size: 30px;
   cursor: pointer;
-  color: rgb(4, 0, 71);
+  color: rgb(49, 41, 209);
 }
 
 .topRight {
@@ -30,8 +31,12 @@
 .topBarIconContainer {
   position: relative;
   margin-right: 10px;
-  cursor: pointer;
   color: rgb(98, 98, 98);
+}
+
+.topnavIcon {
+  font-size: 30px !important;
+  cursor: pointer;
 }
 
 .topAvatar {

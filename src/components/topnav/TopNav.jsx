@@ -14,10 +14,10 @@ const TopBar = () => {
         </div>
         <div className="topRight">
           <div className="topnavIconContainer">
-            <SettingsIcon />
+            <SettingsIcon className="topnavIcon" />
           </div>
           <div className="topnavIconContainer">
-            <LightbulbIcon />
+            <LightbulbIcon className="topnavIcon" />
           </div>
           <img
             src="https://images.pexels.com/photos/3184454/pexels-photo-3184454.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
