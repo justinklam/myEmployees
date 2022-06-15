@@ -41,5 +41,6 @@
 
 .sidebarIcon {
   margin-right: 5px;
+  /* materialui size bypass */
   font-size: 50px !important;
 }

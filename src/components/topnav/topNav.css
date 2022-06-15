@@ -35,6 +35,7 @@
 }
 
 .topnavIcon {
+  /* materialui size bypass */
   font-size: 30px !important;
   cursor: pointer;
 }

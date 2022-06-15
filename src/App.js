@@ -4,6 +4,7 @@ import "./app.css";
 // Components
 import TopNav from "./components/topnav/TopNav";
 import Sidebar from "./components/sidebar/Sidebar";
+import Home from "./components/pages/home/Home";
 // import Employees from "./components/employee/Employees";
 
 const App = () => {
@@ -12,7 +13,8 @@ const App = () => {
       <TopNav />
       <div className="container">
         <Sidebar />
-        <div className="other-area">Other Pages</div>
+        <Home />
+        {/* <div className="other-area">Other Pages</div> */}
       </div>
       {/* <Employees /> */}
     </>
