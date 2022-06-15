@@ -4,6 +4,19 @@ import axios from "axios";
 const Employees = () => {
   const [employees, setEmployees] = useState([]);
 
+  // const [employees, setEmployees] = useState([
+  //   {
+  //     id: response.data.id,
+  //     name: response.data.name,
+  //     code: response.data.code,
+  //     profession: response.data.profession,
+  //     color: response.data.color,
+  //     city: response.data.city,
+  //     branch: response.data.branch,
+  //     assigned: response.data.assigned,
+  //   },
+  // ]);
+
   useEffect(() => {
     axios.get("//localhost:8080/api/employees").then((response) => {
       setEmployees(response.data);
@@ -12,7 +25,7 @@ const Employees = () => {
   }, []);
 
   return (
-    <div className="employee">
+    <div className="employees">
       <h1>Plexxis Employees</h1>
       {employees.map((employee) => (
         <div key={employee.id}>
