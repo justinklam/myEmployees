@@ -1,23 +1,51 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from "react";
+const axios = require("axios").default;
 
 function App() {
+  const [employees, setEmployees] = useState([]);
+  // state = {
+  //   employees: [],
+  // };
+
+  const getEmployeeData = async () => {
+    await axios
+      .get(`//localhost:8080/api/employees`)
+      .then((response) => response.json())
+      .then((employees) => this.setEmployees({ employees }));
+    // const employeeData = response.json;
+    // setEmployees(employeeData);
+  };
+
+  useEffect(() => {
+    getEmployeeData();
+  }, []);
+
+  console.log(JSON.stringify(employees, null, 2));
+
+  // axios return. loop over the variables below
+
+  // const getEmployees = () => {
+  //   return axios.post("//localhost:8080/api/employees");
+  // };
+
+  // console.log(getEmployees);
+
+  // const { employees } = this.state;
+
+  // console.log(this.state);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Plexxis Employees</h1>
+      {employees.map((employee) => (
+        <div key={employee.id}>
+          {Object.keys(employee).map((key) => (
+            <span key={key}>
+              {key}:{employee[key]}
+            </span>
+          ))}
+        </div>
+      ))}
     </div>
   );
 }
