@@ -15,16 +15,16 @@ const Sidebar = () => {
       <div className="sidebarMenu"></div>
       <h3 className="sidebarTitle">Dashboard</h3>
       <ul className="sidebarList">
-        <li className="sidebarListIcons">
-          <HomeIcon />
+        <li className="sidebarListIcons active">
+          <HomeIcon className="sidebarIcon" />
           Home
         </li>
         <li className="sidebarListIcons">
-          <PersonIcon />
+          <PersonIcon className="sidebarIcon" />
           Personnel
         </li>
         <li className="sidebarListIcons">
-          <SettingsIcon />
+          <SettingsIcon className="sidebarIcon" />
           Settings
         </li>
       </ul>

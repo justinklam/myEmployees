@@ -4,7 +4,7 @@
   height: calc(100vh - 50px);
   position: sticky;
   top: 50px;
-  background-color: aliceblue;
+  background-color: rgb(250, 250, 255);
 }
 
 .sidebarWrapper {
@@ -31,4 +31,15 @@
   cursor: pointer;
   display: flex;
   align-items: center;
+  border-radius: 10px;
+}
+
+.sidebarListIcons.active,
+.sidebarListIcons:hover {
+  background-color: aliceblue;
+}
+
+.sidebaricon {
+  margin-right: 5px;
+  font-size: 30px !important;
 }
