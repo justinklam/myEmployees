@@ -12,6 +12,7 @@ const App = () => {
       <TopNav />
       <div className="container">
         <Sidebar />
+        <div className="other-area">Other Pages</div>
       </div>
       {/* <Employees /> */}
     </>

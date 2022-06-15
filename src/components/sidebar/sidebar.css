@@ -1,3 +1,13 @@
 .sidebar {
   flex: 1;
+  /* to prevent overflow into header */
+  height: calc(100vh - 50px);
+  position: sticky;
+  top: 50px;
+  background-color: aliceblue;
+}
+
+.sidebarWrapper {
+  padding: 20px;
+  color: rgb(98, 98, 98);
 }
