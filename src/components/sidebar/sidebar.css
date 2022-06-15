@@ -11,3 +11,24 @@
   padding: 20px;
   color: rgb(98, 98, 98);
 }
+
+.sidebarMenu {
+  margin-bottom: 10px;
+}
+
+.sidebarTitle {
+  font-size: 20px;
+  color: rgb(86, 86, 86);
+}
+
+.sidebarList {
+  list-style: none;
+  padding: 5px;
+}
+
+.sidebarListIcons {
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
