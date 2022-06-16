@@ -10,7 +10,11 @@ const TopBar = () => {
     <div className="topnav">
       <div className="topnavWrapper">
         <div className="topLeft">
-          <span className="logo">myEmployees</span>
+          <span className="logo">
+            <a href="/" className="logoLink">
+              myEmployees
+            </a>
+          </span>
         </div>
         <div className="topRight">
           <div className="topnavIconContainer">
