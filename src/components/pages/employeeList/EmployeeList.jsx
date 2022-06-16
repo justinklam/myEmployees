@@ -16,7 +16,7 @@ const EmployeeList = () => {
     {
       field: "profile",
       headerName: "Profile",
-      width: 200,
+      width: 70,
       renderCell: (params) => {
         return (
           <div className="employeeListProfile">
