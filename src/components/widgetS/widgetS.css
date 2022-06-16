@@ -39,3 +39,15 @@
 .widgetSmUsername {
   font-weight: 600;
 }
+
+.widgetSmUserProfession {
+  font-weight: 300;
+}
+
+.widgetSmButton {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  border: none;
+  padding: 8px 10px;
+}
