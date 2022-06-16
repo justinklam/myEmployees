@@ -10,7 +10,7 @@ import VisibilityIcon from "@mui/icons-material/Visibility";
 const WidgetS = () => {
   return (
     <div className="widgetSm">
-      <span className="widgetSmTitle">Latest Employees</span>
+      <span className="widgetSmTitle">Employee List</span>
       <ul className="widgetSmList">
         <li className="widgetSmListItem">
           <img
@@ -19,8 +19,68 @@ const WidgetS = () => {
             className="widgetSmImg"
           />
           <div className="widgetSmUser">
-            <div className="widgetSmUsername"></div>
-            <div className="widgetSmUserProfession"></div>
+            <div className="widgetSmUsername">Name</div>
+            <div className="widgetSmUserProfession">Job</div>
+          </div>
+          <button className="widgetSmButton">
+            <VisibilityIcon />
+            Display
+          </button>
+        </li>
+        <li className="widgetSmListItem">
+          <img
+            src="https://images.pexels.com/photos/585418/pexels-photo-585418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt=""
+            className="widgetSmImg"
+          />
+          <div className="widgetSmUser">
+            <div className="widgetSmUsername">Name</div>
+            <div className="widgetSmUserProfession">Job</div>
+          </div>
+          <button className="widgetSmButton">
+            <VisibilityIcon />
+            Display
+          </button>
+        </li>
+        <li className="widgetSmListItem">
+          <img
+            src="https://images.pexels.com/photos/585418/pexels-photo-585418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt=""
+            className="widgetSmImg"
+          />
+          <div className="widgetSmUser">
+            <div className="widgetSmUsername">Name</div>
+            <div className="widgetSmUserProfession">Job</div>
+          </div>
+          <button className="widgetSmButton">
+            <VisibilityIcon />
+            Display
+          </button>
+        </li>
+        <li className="widgetSmListItem">
+          <img
+            src="https://images.pexels.com/photos/585418/pexels-photo-585418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt=""
+            className="widgetSmImg"
+          />
+          <div className="widgetSmUser">
+            <div className="widgetSmUsername">Name</div>
+            <div className="widgetSmUserProfession">Job</div>
+          </div>
+          <button className="widgetSmButton">
+            <VisibilityIcon />
+            Display
+          </button>
+        </li>
+        <li className="widgetSmListItem">
+          <img
+            src="https://images.pexels.com/photos/585418/pexels-photo-585418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt=""
+            className="widgetSmImg"
+          />
+          <div className="widgetSmUser">
+            <div className="widgetSmUsername">Name</div>
+            <div className="widgetSmUserProfession">Job</div>
           </div>
           <button className="widgetSmButton">
             <VisibilityIcon />
