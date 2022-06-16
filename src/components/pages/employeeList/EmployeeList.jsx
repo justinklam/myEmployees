@@ -12,19 +12,26 @@ const EmployeeList = () => {
     { field: "profession", headerName: "Profession", width: 130 },
     { field: "city", headerName: "City", width: 130 },
     { field: "branch", headerName: "Branch", width: 130 },
-    { field: "assigned", headerName: "Assigned", width: 70 },
-    // {
-    //   field: "age",
-    //   headerName: "Age",
-    //   type: "number",
-    //   width: 90,
-    // },
+    { field: "email", headerName: "Email", width: 200 },
+    {
+      field: "profile",
+      headerName: "Profile",
+      width: 200,
+      renderCell: (params) => {
+        return (
+          <div className="employeeListProfile">
+            <img className="employeeListImg" src={params.row.profile} alt="" />
+          </div>
+        );
+      },
+    },
+    { field: "assigned", headerName: "Assigned", width: 100 },
     {
       field: "fullName",
       headerName: "Full Name",
-      description: "This column has a value getter and is not sortable.",
+      description: "Cannot sort this column",
       sortable: false,
-      width: 160,
+      width: 200,
       valueGetter: (params) =>
         `${params.row.firstName || ""} ${params.row.lastName || ""}`,
     },
@@ -39,6 +46,9 @@ const EmployeeList = () => {
       profession: "Drywall Installer",
       city: "Toronto",
       branch: "Abacus",
+      email: "user1@mail.com",
+      profile:
+        "https://images.pexels.com/photos/1752757/pexels-photo-1752757.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       assigned: "True",
     },
     {
@@ -49,6 +59,9 @@ const EmployeeList = () => {
       profession: "Drywall Installer",
       city: "Brampton",
       branch: "Pillsworth",
+      email: "user1@mail.com",
+      profile:
+        "https://images.pexels.com/photos/1752757/pexels-photo-1752757.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       assigned: "True",
     },
     {
@@ -59,6 +72,9 @@ const EmployeeList = () => {
       profession: "Drywall Installer",
       city: "Bolton",
       branch: "Abacus",
+      email: "user1@mail.com",
+      profile:
+        "https://images.pexels.com/photos/1752757/pexels-photo-1752757.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       assigned: "True",
     },
     {
@@ -69,6 +85,9 @@ const EmployeeList = () => {
       profession: "Drywall Installer",
       city: "Bolton",
       branch: "Abacus",
+      email: "user1@mail.com",
+      profile:
+        "https://images.pexels.com/photos/1752757/pexels-photo-1752757.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       assigned: "True",
     },
     {
@@ -79,6 +98,9 @@ const EmployeeList = () => {
       profession: "Drywall Installer",
       city: "Brampton",
       branch: "Abacus",
+      email: "user1@mail.com",
+      profile:
+        "https://images.pexels.com/photos/1752757/pexels-photo-1752757.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       assigned: "True",
     },
     {
@@ -89,6 +111,9 @@ const EmployeeList = () => {
       profession: "Drywall Installer",
       city: "Brampton",
       branch: "Abacus",
+      email: "user1@mail.com",
+      profile:
+        "https://images.pexels.com/photos/1752757/pexels-photo-1752757.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       assigned: "True",
     },
     {
@@ -99,6 +124,9 @@ const EmployeeList = () => {
       profession: "Drywall Installer",
       city: "Toronto",
       branch: "Abacus",
+      email: "user1@mail.com",
+      profile:
+        "https://images.pexels.com/photos/1752757/pexels-photo-1752757.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       assigned: "True",
     },
     {
@@ -109,6 +137,9 @@ const EmployeeList = () => {
       profession: "Drywall Installer",
       city: "Toronto",
       branch: "Abacus",
+      email: "user1@mail.com",
+      profile:
+        "https://images.pexels.com/photos/1752757/pexels-photo-1752757.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       assigned: "True",
     },
     {
@@ -119,6 +150,9 @@ const EmployeeList = () => {
       profession: "Drywall Installer",
       city: "Toronto",
       branch: "Abacus",
+      email: "user1@mail.com",
+      profile:
+        "https://images.pexels.com/photos/1752757/pexels-photo-1752757.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       assigned: "True",
     },
   ];
