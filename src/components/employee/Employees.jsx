@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 
 // Helper Function
-import getEmployees from "../../helpers/selectors.js";
+// import getEmployees from "../../helpers/selectors.js";
 
 const Employees = () => {
   const [employees, setEmployees] = useState([]);
