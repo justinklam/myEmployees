@@ -10,7 +10,7 @@ import VisibilityIcon from "@mui/icons-material/Visibility";
 const WidgetS = () => {
   return (
     <div className="widgetSm">
-      <span className="widgetSmTitle">Employee List</span>
+      <span className="widgetSmTitle">Employee List - At A Glance</span>
       <ul className="widgetSmList">
         <li className="widgetSmListItem">
           <img
@@ -23,7 +23,7 @@ const WidgetS = () => {
             <div className="widgetSmUserProfession">Job</div>
           </div>
           <button className="widgetSmButton">
-            <VisibilityIcon />
+            <VisibilityIcon className="widgetSmIcon" />
             Display
           </button>
         </li>
@@ -38,7 +38,7 @@ const WidgetS = () => {
             <div className="widgetSmUserProfession">Job</div>
           </div>
           <button className="widgetSmButton">
-            <VisibilityIcon />
+            <VisibilityIcon className="widgetSmIcon" />
             Display
           </button>
         </li>
@@ -53,7 +53,7 @@ const WidgetS = () => {
             <div className="widgetSmUserProfession">Job</div>
           </div>
           <button className="widgetSmButton">
-            <VisibilityIcon />
+            <VisibilityIcon className="widgetSmIcon" />
             Display
           </button>
         </li>
@@ -68,7 +68,7 @@ const WidgetS = () => {
             <div className="widgetSmUserProfession">Job</div>
           </div>
           <button className="widgetSmButton">
-            <VisibilityIcon />
+            <VisibilityIcon className="widgetSmIcon" />
             Display
           </button>
         </li>
@@ -83,7 +83,7 @@ const WidgetS = () => {
             <div className="widgetSmUserProfession">Job</div>
           </div>
           <button className="widgetSmButton">
-            <VisibilityIcon />
+            <VisibilityIcon className="widgetSmIcon" />
             Display
           </button>
         </li>
