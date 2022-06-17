@@ -8,7 +8,7 @@ import EditIcon from "@mui/icons-material/Edit";
 import DeleteIcon from "@mui/icons-material/Delete";
 
 // Dummy Data
-import { employeeRows } from "../../../helpers/selectors";
+import { employeeRows } from "../../helpers/selectors";
 
 const EmployeeList = () => {
   const [data, setData] = useState(employeeRows);

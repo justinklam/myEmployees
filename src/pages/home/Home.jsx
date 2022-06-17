@@ -2,8 +2,8 @@ import React from "react";
 import "./home.css";
 
 // Components
-import WidgetS from "../../widgetS/WidgetS";
-import WidgetL from "../../widgetL/WidgetL";
+import WidgetS from "../../components/widgetS/WidgetS";
+import WidgetL from "../../components/widgetL/WidgetL";
 
 const Home = () => {
   return (

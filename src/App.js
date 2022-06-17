@@ -7,9 +7,9 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 // Components
 import TopNav from "./components/topnav/TopNav";
 import Sidebar from "./components/sidebar/Sidebar";
-import Home from "./components/pages/home/Home";
-import EmployeeList from "./components/pages/employeeList/EmployeeList";
-import Employee from "./components/pages/employee/Employee";
+import Home from "./pages/home/Home";
+import EmployeeList from "./pages/employeeList/EmployeeList";
+import Employee from "./pages/employee/Employee";
 // import User from "./components/user/User";
 
 const App = () => {
