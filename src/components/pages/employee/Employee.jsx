@@ -87,6 +87,70 @@ const Employee = () => {
                   className="employeeUpdateInput"
                 />
               </div>
+              <div className="employeeUpdateItem">
+                <label>First Name</label>
+                <input
+                  type="text"
+                  placeholder="Kyle"
+                  className="employeeUpdateInput"
+                />
+              </div>
+              <div className="employeeUpdateItem">
+                <label>Profile</label>
+                <input
+                  type="text"
+                  placeholder="Profile"
+                  className="employeeUpdateInput"
+                />
+              </div>
+              <div className="employeeUpdateItem">
+                <label>Email</label>
+                <input
+                  type="email"
+                  placeholder="user@mail.com"
+                  className="employeeUpdateInput"
+                />
+              </div>
+              <div className="employeeUpdateItem">
+                <label>Code</label>
+                <input
+                  type="text"
+                  placeholder="F100"
+                  className="employeeUpdateInput"
+                />
+              </div>
+              <div className="employeeUpdateItem">
+                <label>Profession</label>
+                <input
+                  type="text"
+                  placeholder="Drywall Installer"
+                  className="employeeUpdateInput"
+                />
+              </div>
+              <div className="employeeUpdateItem">
+                <label>City</label>
+                <input
+                  type="text"
+                  placeholder="Toronto"
+                  className="employeeUpdateInput"
+                />
+              </div>
+              <div className="employeeUpdateItem">
+                <label>Branch</label>
+                <input
+                  type="text"
+                  placeholder="Abacus"
+                  className="employeeUpdateInput"
+                />
+              </div>
+              <div className="employeeUpdateItem">
+                <label>Assigned</label>
+                <input
+                  type="text"
+                  placeholder="True"
+                  className="employeeUpdateInput"
+                />
+              </div>
             </div>
             <div className="employeeUpdateRight"></div>
           </form>
