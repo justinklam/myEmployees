@@ -49,13 +49,13 @@ const EmployeeList = () => {
         return (
           <>
             <Link to={"/employee/" + params.row.id}>
-              <button className="employeeListBtn">
+              <button className="employeeListEditBtn">
                 <EditIcon className="employeeListEdit" />
                 Edit
               </button>
             </Link>
             <button
-              className="employeeListBtn"
+              className="employeeListDeleteBtn"
               onClick={() => handleDelete(params.row.id)}
             >
               <DeleteIcon className="employeeListDelete" />
