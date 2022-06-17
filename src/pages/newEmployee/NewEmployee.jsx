@@ -40,7 +40,10 @@ const NewEmployee = () => {
         </div>
         <div className="newEmployeeItem">
           <label>Assigned</label>
-          <input type="text" placeholder="Assigned" />
+          <select name="assign" id="assign" className="newEmployeeAssign">
+            <option value="true">True</option>
+            <option value="false">False</option>
+          </select>
         </div>
       </form>
     </div>
