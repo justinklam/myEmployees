@@ -2,3 +2,9 @@
   flex: 8;
   padding: 20px;
 }
+
+.employeeTitleContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

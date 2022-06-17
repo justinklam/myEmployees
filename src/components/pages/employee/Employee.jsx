@@ -6,6 +6,7 @@ const Employee = () => {
     <div className="employee">
       <div className="employeeTitleContainer">
         <h1 className="employeeTitle">Edit Employee</h1>
+        <button className="employeeAddButton">Create</button>
       </div>
     </div>
   );
