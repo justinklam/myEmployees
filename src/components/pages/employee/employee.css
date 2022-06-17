@@ -63,9 +63,31 @@
 }
 
 .employeeShowUsername {
+  font-size: 20px;
   font-weight: 600;
 }
 
 .employeeShowUserProfession {
   font-weight: 300;
+}
+
+.employeeShowBottom {
+  margin-top: 20px;
+}
+
+.employeeShowBotTitle {
+  font-size: 15px;
+  font-weight: 600;
+  color: rgb(86, 86, 86);
+}
+
+.employeeShowInfo {
+  display: flex;
+  align-items: center;
+  margin: 20px 0px;
+  color: rgb(24, 26, 24);
+}
+
+.employeeShowIcon {
+  font-size: 30px !important;
 }
