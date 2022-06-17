@@ -75,7 +75,22 @@ const Employee = () => {
             </div>
           </div>
         </div>
-        <div className="employeeUpdate"></div>
+        <div className="employeeUpdate">
+          <span className="employeeUpdateTitle">Edit</span>
+          <form className="employeeUpdateForm">
+            <div className="employeeUpdateLeft">
+              <div className="employeeUpdateItem">
+                <label>Last Name</label>
+                <input
+                  type="text"
+                  placeholder="Lowry"
+                  className="employeeUpdateInput"
+                />
+              </div>
+            </div>
+            <div className="employeeUpdateRight"></div>
+          </form>
+        </div>
       </div>
     </div>
   );
