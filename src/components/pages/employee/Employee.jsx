@@ -8,6 +8,10 @@ const Employee = () => {
         <h1 className="employeeTitle">Edit Employee</h1>
         <button className="employeeAddButton">Create</button>
       </div>
+      <div className="employeeContainer">
+        <div className="employeeShow"></div>
+        <div className="employeeUpdate"></div>
+      </div>
     </div>
   );
 };
