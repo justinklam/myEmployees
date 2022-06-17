@@ -48,3 +48,7 @@
   font-weight: 600;
   margin-top: 30px;
 }
+
+.newEmployeeBtn:hover {
+  background-color: rgb(217, 233, 250);
+}
