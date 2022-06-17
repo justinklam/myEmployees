@@ -1,5 +1,6 @@
 import React from "react";
 import "./employee.css";
+import { Link } from "react-router-dom";
 
 // MUI
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
@@ -17,7 +18,9 @@ const Employee = () => {
     <div className="employee">
       <div className="employeeTitleContainer">
         <h1 className="employeeTitle">Edit Employee</h1>
-        <button className="employeeCreateButton">Create</button>
+        <Link to="/newEmployee">
+          <button className="employeeCreateButton">Create</button>
+        </Link>
       </div>
       <div className="employeeContainer">
         <div className="employeeShow">
