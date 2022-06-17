@@ -43,3 +43,29 @@
   box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
   margin-left: 20px;
 }
+
+.employeeShowTop {
+  display: flex;
+  align-items: center;
+}
+
+.employeeShowImg {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.employeeShowTopTitle {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.employeeShowUsername {
+  font-weight: 600;
+}
+
+.employeeShowUserProfession {
+  font-weight: 300;
+}
