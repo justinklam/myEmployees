@@ -1,6 +1,16 @@
 import React from "react";
 import "./employee.css";
 
+// MUI
+import AccountCircleIcon from "@mui/icons-material/AccountCircle";
+import CodeIcon from "@mui/icons-material/Code";
+import WorkIcon from "@mui/icons-material/Work";
+import LocationCityIcon from "@mui/icons-material/LocationCity";
+import ParkIcon from "@mui/icons-material/Park";
+import EmailIcon from "@mui/icons-material/Email";
+import CameraAltIcon from "@mui/icons-material/CameraAlt";
+import AssignmentIcon from "@mui/icons-material/Assignment";
+
 const Employee = () => {
   return (
     <div className="employee">
@@ -23,7 +33,45 @@ const Employee = () => {
               </span>
             </div>
           </div>
-          <div className="employeeShowBottom"></div>
+          <div className="employeeShowBottom">
+            <span className="employeeShowBotTitle">Account Details</span>
+            <div className="employeeShowInfo">
+              <AccountCircleIcon className="employeeShowIcon" />
+              <span className="employeeShowInfoTitle">Lowry</span>
+            </div>
+            <div className="employeeShowInfo">
+              <AccountCircleIcon className="employeeShowIcon" />
+              <span className="employeeShowInfoTitle">Kyle</span>
+            </div>
+            <div className="employeeShowInfo">
+              <CodeIcon className="employeeShowIcon" />
+              <span className="employeeShowInfoTitle">F100</span>
+            </div>
+            <div className="employeeShowInfo">
+              <WorkIcon className="employeeShowIcon" />
+              <span className="employeeShowInfoTitle">Drywall Installer</span>
+            </div>
+            <div className="employeeShowInfo">
+              <LocationCityIcon className="employeeShowIcon" />
+              <span className="employeeShowInfoTitle">Toronto</span>
+            </div>
+            <div className="employeeShowInfo">
+              <ParkIcon className="employeeShowIcon" />
+              <span className="employeeShowInfoTitle">Abacus</span>
+            </div>
+            <div className="employeeShowInfo">
+              <EmailIcon className="employeeShowIcon" />
+              <span className="employeeShowInfoTitle">user@mail.com</span>
+            </div>
+            <div className="employeeShowInfo">
+              <CameraAltIcon className="employeeShowIcon" />
+              <span className="employeeShowInfoTitle">Profile</span>
+            </div>
+            <div className="employeeShowInfo">
+              <AssignmentIcon className="employeeShowIcon" />
+              <span className="employeeShowInfoTitle">Assigned</span>
+            </div>
+          </div>
         </div>
         <div className="employeeUpdate"></div>
       </div>
