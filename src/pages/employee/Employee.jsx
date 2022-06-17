@@ -41,11 +41,11 @@ const Employee = () => {
             <span className="employeeShowBotTitle">Account Details</span>
             <div className="employeeShowInfo">
               <AccountCircleIcon className="employeeShowIcon" />
-              <span className="employeeShowInfoTitle">Lowry</span>
+              <span className="employeeShowInfoTitle">Kyle</span>
             </div>
             <div className="employeeShowInfo">
               <AccountCircleIcon className="employeeShowIcon" />
-              <span className="employeeShowInfoTitle">Kyle</span>
+              <span className="employeeShowInfoTitle">Lowry</span>
             </div>
             <div className="employeeShowInfo">
               <CameraAltIcon className="employeeShowIcon" />
@@ -84,18 +84,18 @@ const Employee = () => {
           <form className="employeeUpdateForm">
             <div className="employeeUpdateLeft">
               <div className="employeeUpdateItem">
-                <label>Last Name</label>
-                <input
-                  type="text"
-                  placeholder="Lowry"
-                  className="employeeUpdateInput"
-                />
-              </div>
-              <div className="employeeUpdateItem">
                 <label>First Name</label>
                 <input
                   type="text"
                   placeholder="Kyle"
+                  className="employeeUpdateInput"
+                />
+              </div>
+              <div className="employeeUpdateItem">
+                <label>Last Name</label>
+                <input
+                  type="text"
+                  placeholder="Lowry"
                   className="employeeUpdateInput"
                 />
               </div>
