@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./employeeList.css";
 import { Link } from "react-router-dom";
 
@@ -11,6 +11,8 @@ import DeleteIcon from "@mui/icons-material/Delete";
 import { employeeRows } from "../../../helpers/selectors";
 
 const EmployeeList = () => {
+  const [data, setData] = useState(employeeRows);
+
   const columns = [
     { field: "id", headerName: "ID", width: 70 },
     { field: "firstName", headerName: "First Name", width: 130 },
@@ -68,7 +70,7 @@ const EmployeeList = () => {
   return (
     <div className="employeeList">
       <DataGrid
-        rows={employeeRows}
+        rows={data}
         columns={columns}
         disableSelectionOnClick
         pageSize={10}
