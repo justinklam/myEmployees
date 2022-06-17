@@ -8,9 +8,12 @@ import WidgetL from "../../widgetL/WidgetL";
 const Home = () => {
   return (
     <div className="home">
-      <div className="homeWidgets">
-        <WidgetS />
-        <WidgetL />
+      <div className="homeTitleContainer">
+        <h1 className="homeTitle">Home</h1>
+        <div className="homeWidgets">
+          <WidgetS />
+          <WidgetL />
+        </div>
       </div>
     </div>
   );
