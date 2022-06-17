@@ -13,6 +13,12 @@ import { employeeRows } from "../../../helpers/selectors";
 const EmployeeList = () => {
   const [data, setData] = useState(employeeRows);
 
+  const handleDelete = (id) => {
+    // filters through entire employee list
+    // if item id !== id, set
+    setData(data.filter((item) => item.id !== id));
+  };
+
   const columns = [
     { field: "id", headerName: "ID", width: 70 },
     { field: "firstName", headerName: "First Name", width: 130 },
@@ -44,12 +50,15 @@ const EmployeeList = () => {
           <>
             <Link to={"/employee/" + params.row.id}>
               <button className="employeeListBtn">
-                <EditIcon />
+                <EditIcon className="employeeListEdit" />
                 Edit
               </button>
             </Link>
-            <button className="employeeListBtn">
-              <DeleteIcon />
+            <button
+              className="employeeListBtn"
+              onClick={() => handleDelete(params.row.id)}
+            >
+              <DeleteIcon className="employeeListDelete" />
               Delete
             </button>
           </>
