@@ -1,5 +1,6 @@
 import React from "react";
 import "./employeeList.css";
+import { Link } from "react-router-dom";
 
 // MUI
 import { DataGrid } from "@mui/x-data-grid";
@@ -39,10 +40,12 @@ const EmployeeList = () => {
       renderCell: (params) => {
         return (
           <>
-            <button className="employeeListBtn">
-              <EditIcon />
-              Edit
-            </button>
+            <Link to={"/employee/" + params.row.id}>
+              <button className="employeeListBtn">
+                <EditIcon />
+                Edit
+              </button>
+            </Link>
             <button className="employeeListBtn">
               <DeleteIcon />
               Delete
