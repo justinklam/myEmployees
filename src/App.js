@@ -9,6 +9,7 @@ import TopNav from "./components/topnav/TopNav";
 import Sidebar from "./components/sidebar/Sidebar";
 import Home from "./components/pages/home/Home";
 import EmployeeList from "./components/pages/employeeList/EmployeeList";
+import Employee from "./components/pages/employee/Employee";
 // import User from "./components/user/User";
 
 const App = () => {
@@ -23,6 +24,9 @@ const App = () => {
           </Route>
           <Route path="/employees">
             <EmployeeList />
+          </Route>
+          <Route path="/employee/:employeeId">
+            <Employee />
           </Route>
         </Switch>
       </div>
