@@ -2,7 +2,7 @@ import React from "react";
 import "./app.css";
 
 // React Router Dom
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 // Components
 import TopNav from "./components/topnav/TopNav";
@@ -18,17 +18,11 @@ const App = () => {
       <TopNav />
       <div className="container">
         <Sidebar />
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="/employees">
-            <EmployeeList />
-          </Route>
-          <Route path="/employee/:employeeId">
-            <Employee />
-          </Route>
-        </Switch>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/employees" element={<EmployeeList />} />
+          <Route path="/employee/:employeeId" element={<Employee />} />
+        </Routes>
       </div>
       {/* <User /> */}
     </Router>

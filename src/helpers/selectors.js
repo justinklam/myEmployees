@@ -15,7 +15,7 @@ export const employeeRows = [
     lastName: "Lowry",
     firstName: "Kyle",
     profile:
-      "https://images.pexels.com/photos/1752757/pexels-photo-1752757.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/5468093/pexels-photo-5468093.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     email: "user1@mail.com",
     code: "F100",
     profession: "Drywall Installer",
