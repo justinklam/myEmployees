@@ -184,6 +184,7 @@ const EmployeeList = () => {
       <DataGrid
         rows={rows}
         columns={columns}
+        disableSelectionOnClick
         pageSize={10}
         rowsPerPageOptions={[5]}
         checkboxSelection
