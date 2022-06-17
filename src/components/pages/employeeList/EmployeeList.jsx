@@ -36,11 +36,11 @@ const EmployeeList = () => {
       renderCell: (params) => {
         return (
           <>
-            <button className="employeeListEdit">
+            <button className="employeeListBtn">
               <EditIcon />
               Edit
             </button>
-            <button className="employeeListEdit">
+            <button className="employeeListBtn">
               <DeleteIcon />
               Delete
             </button>
