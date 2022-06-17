@@ -17,7 +17,7 @@ const Employee = () => {
     <div className="employee">
       <div className="employeeTitleContainer">
         <h1 className="employeeTitle">Edit Employee</h1>
-        <button className="employeeAddButton">Create</button>
+        <button className="employeeCreateButton">Create</button>
       </div>
       <div className="employeeContainer">
         <div className="employeeShow">
@@ -162,10 +162,11 @@ const Employee = () => {
                 />
                 {/* targets the input id:file */}
                 <label htmlFor="file">
-                  <UploadFileIcon />
+                  <UploadFileIcon className="employeeUpdateIcon" />
                 </label>
                 <input type="file" id="file" style={{ display: "none" }} />
               </div>
+              <button className="employeeUpdateBtn">Update Photo</button>
             </div>
           </form>
         </div>

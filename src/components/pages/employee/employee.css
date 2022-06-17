@@ -9,7 +9,7 @@
   justify-content: space-between;
 }
 
-.employeeAddButton {
+.employeeCreateButton {
   width: 100px;
   border: none;
   padding: 5px;
@@ -20,7 +20,7 @@
   font-weight: 600;
 }
 
-.employeeAddButton:hover {
+.employeeCreateButton:hover {
   background-color: rgb(217, 233, 250);
 }
 
@@ -119,16 +119,50 @@
 }
 
 .employeeUpdateInput {
-  width: 250px;
+  width: 350px;
   height: 30px;
   border: none;
   border-bottom: 1px solid rgb(24, 26, 24);
 }
 
+.employeeUpdateRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.employeeUpdateUpload {
+  display: flex;
+  align-items: center;
+}
+
 .employeeUpdateImg {
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   border-radius: 10px;
   margin-right: 20px;
   object-fit: cover;
+}
+
+.employeeUpdateIcon {
+  cursor: pointer;
+  padding: 5px;
+}
+
+.employeeUpdateIcon:hover {
+  background-color: rgb(217, 233, 250);
+}
+
+.employeeUpdateBtn {
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  color: rgb(86, 86, 86);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.employeeUpdateBtn:hover {
+  background-color: rgb(217, 233, 250);
 }
