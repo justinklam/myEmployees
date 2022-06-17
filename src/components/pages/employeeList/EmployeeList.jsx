@@ -1,7 +1,10 @@
 import React from "react";
 import "./employeeList.css";
 
+// MUI
 import { DataGrid } from "@mui/x-data-grid";
+import EditIcon from "@mui/icons-material/Edit";
+import DeleteIcon from "@mui/icons-material/Delete";
 
 const EmployeeList = () => {
   const columns = [
@@ -26,6 +29,25 @@ const EmployeeList = () => {
       },
     },
     { field: "assigned", headerName: "Assigned", width: 100 },
+    {
+      field: "action",
+      headerName: "Action",
+      width: 200,
+      renderCell: (params) => {
+        return (
+          <>
+            <button className="employeeListEdit">
+              <EditIcon />
+              Edit
+            </button>
+            <button className="employeeListEdit">
+              <DeleteIcon />
+              Delete
+            </button>
+          </>
+        );
+      },
+    },
     {
       field: "fullName",
       headerName: "Full Name",
