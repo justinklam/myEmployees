@@ -10,6 +10,7 @@ import Sidebar from "./components/sidebar/Sidebar";
 import Home from "./pages/home/Home";
 import EmployeeList from "./pages/employeeList/EmployeeList";
 import Employee from "./pages/employee/Employee";
+import NewEmployee from "./pages/newEmployee/NewEmployee";
 // import User from "./components/user/User";
 
 const App = () => {
@@ -22,6 +23,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/employees" element={<EmployeeList />} />
           <Route path="/employee/:employeeId" element={<Employee />} />
+          <Route path="/newEmployee" element={<NewEmployee />} />
         </Routes>
       </div>
       {/* <User /> */}
