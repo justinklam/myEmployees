@@ -44,6 +44,15 @@ const Employee = () => {
               <span className="employeeShowInfoTitle">Kyle</span>
             </div>
             <div className="employeeShowInfo">
+              <CameraAltIcon className="employeeShowIcon" />
+              <span className="employeeShowInfoTitle">Profile</span>
+            </div>
+            <div className="employeeShowInfo">
+              <EmailIcon className="employeeShowIcon" />
+              <span className="employeeShowInfoTitle">user@mail.com</span>
+            </div>
+            <span className="employeeShowBotTitle">Employment Details</span>
+            <div className="employeeShowInfo">
               <CodeIcon className="employeeShowIcon" />
               <span className="employeeShowInfoTitle">F100</span>
             </div>
@@ -51,6 +60,7 @@ const Employee = () => {
               <WorkIcon className="employeeShowIcon" />
               <span className="employeeShowInfoTitle">Drywall Installer</span>
             </div>
+            <span className="employeeShowBotTitle">Location Details</span>
             <div className="employeeShowInfo">
               <LocationCityIcon className="employeeShowIcon" />
               <span className="employeeShowInfoTitle">Toronto</span>
@@ -60,16 +70,8 @@ const Employee = () => {
               <span className="employeeShowInfoTitle">Abacus</span>
             </div>
             <div className="employeeShowInfo">
-              <EmailIcon className="employeeShowIcon" />
-              <span className="employeeShowInfoTitle">user@mail.com</span>
-            </div>
-            <div className="employeeShowInfo">
-              <CameraAltIcon className="employeeShowIcon" />
-              <span className="employeeShowInfoTitle">Profile</span>
-            </div>
-            <div className="employeeShowInfo">
               <AssignmentIcon className="employeeShowIcon" />
-              <span className="employeeShowInfoTitle">Assigned</span>
+              <span className="employeeShowInfoTitle">True</span>
             </div>
           </div>
         </div>

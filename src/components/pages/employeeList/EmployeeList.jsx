@@ -23,15 +23,12 @@ const EmployeeList = () => {
     { field: "id", headerName: "ID", width: 70 },
     { field: "firstName", headerName: "First Name", width: 130 },
     { field: "lastName", headerName: "Last Name", width: 130 },
-    { field: "code", headerName: "Code", width: 70 },
-    { field: "profession", headerName: "Profession", width: 130 },
-    { field: "city", headerName: "City", width: 130 },
-    { field: "branch", headerName: "Branch", width: 130 },
-    { field: "email", headerName: "Email", width: 200 },
     {
       field: "profile",
       headerName: "Profile",
       width: 70,
+      description: "Cannot sort this column",
+      sortable: false,
       renderCell: (params) => {
         return (
           <div className="employeeListProfile">
@@ -40,11 +37,18 @@ const EmployeeList = () => {
         );
       },
     },
+    { field: "email", headerName: "Email", width: 200 },
+    { field: "code", headerName: "Code", width: 70 },
+    { field: "profession", headerName: "Profession", width: 130 },
+    { field: "city", headerName: "City", width: 130 },
+    { field: "branch", headerName: "Branch", width: 130 },
     { field: "assigned", headerName: "Assigned", width: 100 },
     {
       field: "action",
       headerName: "Action",
       width: 200,
+      description: "Cannot sort this column",
+      sortable: false,
       renderCell: (params) => {
         return (
           <>
