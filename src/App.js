@@ -9,7 +9,7 @@ import TopNav from "./components/topnav/TopNav";
 import Sidebar from "./components/sidebar/Sidebar";
 import Home from "./components/pages/home/Home";
 import EmployeeList from "./components/pages/employeeList/EmployeeList";
-// import Employees from "./components/employee/Employees";
+// import User from "./components/user/User";
 
 const App = () => {
   return (
@@ -26,7 +26,7 @@ const App = () => {
           </Route>
         </Switch>
       </div>
-      {/* <Employees /> */}
+      {/* <User /> */}
     </Router>
   );
 };

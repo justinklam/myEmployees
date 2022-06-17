@@ -15,7 +15,7 @@ const EmployeeList = () => {
 
   const handleDelete = (id) => {
     // filters through entire employee list
-    // if item id !== id, set
+    // if item id matches, it removes
     setData(data.filter((item) => item.id !== id));
   };
 

@@ -4,7 +4,7 @@ import axios from "axios";
 // Helper Function
 // import getEmployees from "../../helpers/selectors.js";
 
-const Employees = () => {
+const User = () => {
   const [employees, setEmployees] = useState([]);
 
   // const [employees, setEmployees] = useState([
@@ -43,4 +43,4 @@ const Employees = () => {
   );
 };
 
-export default Employees;
+export default User;
