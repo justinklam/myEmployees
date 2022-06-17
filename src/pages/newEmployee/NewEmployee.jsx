@@ -45,6 +45,7 @@ const NewEmployee = () => {
             <option value="false">False</option>
           </select>
         </div>
+        <button className="newEmployeeBtn">Create New Employee</button>
       </form>
     </div>
   );
