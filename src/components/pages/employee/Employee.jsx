@@ -10,6 +10,7 @@ import ParkIcon from "@mui/icons-material/Park";
 import EmailIcon from "@mui/icons-material/Email";
 import CameraAltIcon from "@mui/icons-material/CameraAlt";
 import AssignmentIcon from "@mui/icons-material/Assignment";
+import UploadFileIcon from "@mui/icons-material/UploadFile";
 
 const Employee = () => {
   return (
@@ -152,7 +153,20 @@ const Employee = () => {
                 />
               </div>
             </div>
-            <div className="employeeUpdateRight"></div>
+            <div className="employeeUpdateRight">
+              <div className="employeeUpdateUpload">
+                <img
+                  src="https://images.pexels.com/photos/5468093/pexels-photo-5468093.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  alt=""
+                  className="employeeUpdateImg"
+                />
+                {/* targets the input id:file */}
+                <label htmlFor="file">
+                  <UploadFileIcon />
+                </label>
+                <input type="file" id="file" style={{ display: "none" }} />
+              </div>
+            </div>
           </form>
         </div>
       </div>
