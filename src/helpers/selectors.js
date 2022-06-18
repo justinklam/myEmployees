@@ -5,9 +5,8 @@ export async function getEmployees() {
   const response = await axios
     .get("//localhost:8080/api/employees")
     .then((res) => {
-      let employeeData = res.data;
-      console.log("employeeData", employeeData);
-      return employeeData;
+      console.log(res);
+      return res;
     });
 }
 

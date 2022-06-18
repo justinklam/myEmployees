@@ -19,7 +19,7 @@ const Employee = () => {
       <div className="employeeTitleContainer">
         <h1 className="employeeTitle">Edit Employee</h1>
         <Link to="/newEmployee">
-          <button className="employeeCreateButton">Create</button>
+          <button className="employeeCreateButton">Add New</button>
         </Link>
       </div>
       <div className="employeeContainer">

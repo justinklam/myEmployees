@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import "./employeeList.css";
 import { Link } from "react-router-dom";
 import axios from "axios";
+import "./employeeList.css";
 
 // MUI
 import { DataGrid } from "@mui/x-data-grid";
@@ -12,14 +12,14 @@ import DeleteIcon from "@mui/icons-material/Delete";
 // import { getEmployees, employeeRows } from "../../helpers/selectors";
 
 const EmployeeList = () => {
-  const [data, setData] = useState([]);
+  const [emps, setEmps] = useState([]);
 
   useEffect(() => {
     axios
       .get("//localhost:8080/api/employees")
       .then((res) => {
         console.log("api-data", res.data);
-        setData(res.data);
+        setEmps(res.data);
       })
       .catch((err) => {
         console.log("Error", err);
@@ -34,13 +34,13 @@ const EmployeeList = () => {
   //         return res.json();
   //       }
   //     })
-  //     .then((jsonRes) => setData(jsonRes));
-  // });
+  //     .then((jsonRes) => setEmps(jsonRes));
+  // }, []);
 
   const handleDelete = (id) => {
     // filters through entire employee list
     // if item id matches, it removes
-    setData(data.filter((item) => item.id !== id));
+    setEmps(emps.filter((item) => item.id !== id));
   };
 
   const columns = [
@@ -107,7 +107,7 @@ const EmployeeList = () => {
   return (
     <div className="employeeList">
       <DataGrid
-        rows={data}
+        rows={emps}
         columns={columns}
         disableSelectionOnClick
         pageSize={10}
