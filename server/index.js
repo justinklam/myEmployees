@@ -10,6 +10,12 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
 
+// // Routers
+// const employeeRouter = require("./routes/employeesRoutes");
+
+// // Use Routes
+// app.use("/api/employees", employeeRouter);
+
 const corsOptions = {
   origin: "http://localhost:3000",
   optionsSuccessStatus: 200,
@@ -24,3 +30,5 @@ app.get("/api/employees", cors(corsOptions), (req, res, next) => {
 });
 
 app.listen(8080, () => console.log("Job Dispatch API running on port 8080!"));
+
+module.exports = app;
