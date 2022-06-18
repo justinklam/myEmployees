@@ -169,7 +169,7 @@ const Employee = () => {
                 </label>
                 <input type="file" id="file" style={{ display: "none" }} />
               </div>
-              <button className="employeeUpdateBtn">Update Photo</button>
+              <button className="employeeUpdateBtn">Update Employee</button>
             </div>
           </form>
         </div>
