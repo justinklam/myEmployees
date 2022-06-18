@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./employeeList.css";
 import { Link } from "react-router-dom";
+import axios from "axios";
 
 // MUI
 import { DataGrid } from "@mui/x-data-grid";
@@ -8,10 +9,33 @@ import EditIcon from "@mui/icons-material/Edit";
 import DeleteIcon from "@mui/icons-material/Delete";
 
 // Dummy Data
-import { employeeRows } from "../../helpers/selectors";
+// import { getEmployees, employeeRows } from "../../helpers/selectors";
 
 const EmployeeList = () => {
-  const [data, setData] = useState(employeeRows);
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get("//localhost:8080/api/employees")
+      .then((res) => {
+        console.log("api-data", res.data);
+        setData(res.data);
+      })
+      .catch((err) => {
+        console.log("Error", err);
+      });
+  }, []);
+
+  // useEffect(() => {
+  //   getEmployees()
+  //     .then((res) => {
+  //       console.log("res", res[0]);
+  //       if (res.ok) {
+  //         return res.json();
+  //       }
+  //     })
+  //     .then((jsonRes) => setData(jsonRes));
+  // });
 
   const handleDelete = (id) => {
     // filters through entire employee list

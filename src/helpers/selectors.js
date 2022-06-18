@@ -1,12 +1,22 @@
 import axios from "axios";
 
 // Retrieve Employee Data
-export const getEmployees = () => {
-  axios.get("//localhost:8080/api/employees").then((response) => {
-    let employeeData = response.data;
-    console.log(employeeData);
-  });
-};
+export async function getEmployees() {
+  const response = await axios
+    .get("//localhost:8080/api/employees")
+    .then((res) => {
+      let employeeData = res.data;
+      console.log("employeeData", employeeData);
+      return employeeData;
+    });
+}
+
+// export const getEmployees = () => {
+//   axios.get("//localhost:8080/api/employees").then((response) => {
+//     let employeeData = response.data;
+//     console.log(employeeData);
+//   });
+// };
 
 // Employee Dummy Data
 export const employeeRows = [
@@ -128,5 +138,3 @@ export const employeeRows = [
     assigned: "True",
   },
 ];
-
-// export default getEmployees;
