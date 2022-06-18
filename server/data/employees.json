@@ -1,72 +1,110 @@
 [
   {
     "id": 1,
-    "name": "Kyle Lowry",
+    "lastName": "Lowry",
+    "firstName": "Kyle",
+    "profile": "https://images.pexels.com/photos/5468093/pexels-photo-5468093.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "email": "user1@mail.com",
     "code": "F100",
     "profession": "Drywall Installer",
-    "color": "#FF6600",
-    "city": "Brampton",
+    "city": "Toronto",
     "branch": "Abacus",
-    "assigned": true
+    "assigned": "True"
   },
   {
     "id": 2,
-    "name": "DeMar DeRozan",
-    "code": "F101",
+    "lastName": "DeRozan",
+    "firstName": "DeMar",
+    "profile": "https://images.pexels.com/photos/1752757/pexels-photo-1752757.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "email": "user1@mail.com",
+    "code": "F102",
     "profession": "Drywall Installer",
-    "color": "yellow",
     "city": "Brampton",
     "branch": "Pillsworth",
-    "assigned": false
+    "assigned": "True"
   },
   {
     "id": 3,
-    "name": "Fred Van Vleet",
-    "code": "F102",
+    "lastName": "Van Vleet",
+    "firstName": "Fred",
+    "profile": "https://images.pexels.com/photos/1752757/pexels-photo-1752757.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "email": "user1@mail.com",
+    "code": "F103",
     "profession": "Drywall Installer",
-    "color": "green",
     "city": "Bolton",
     "branch": "Abacus",
-    "assigned": false
+    "assigned": "True"
   },
   {
     "id": 4,
-    "name": "Jonas Valanciunas",
-    "code": "F103",
+    "lastName": "Valanciunas",
+    "firstName": "Jonas",
+    "profile": "https://images.pexels.com/photos/1752757/pexels-photo-1752757.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "email": "user1@mail.com",
+    "code": "F104",
     "profession": "Drywall Installer",
-    "color": "#333333",
     "city": "Bolton",
-    "branch": "Pillsworth",
-    "assigned": true
+    "branch": "Abacus",
+    "assigned": "True"
   },
   {
     "id": 5,
-    "name": "Chris Bosh",
-    "code": "F104",
+    "lastName": "Bosh",
+    "firstName": "Chris",
+    "profile": "https://images.pexels.com/photos/1752757/pexels-photo-1752757.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "email": "user1@mail.com",
+    "code": "F105",
     "profession": "Drywall Installer",
-    "color": "#FF6600",
     "city": "Brampton",
     "branch": "Abacus",
-    "assigned": true
+    "assigned": "True"
   },
   {
     "id": 6,
-    "name": "Marcus Camby",
-    "code": "F105",
-    "profession": "Runner",
-    "color": "red",
+    "lastName": "Camby",
+    "firstName": "Marcus",
+    "profile": "https://images.pexels.com/photos/1752757/pexels-photo-1752757.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "email": "user1@mail.com",
+    "code": "F106",
+    "profession": "Drywall Installer",
     "city": "Brampton",
-    "branch": "Pillsworth",
-    "assigned": false
+    "branch": "Abacus",
+    "assigned": "True"
   },
   {
     "id": 7,
-    "name": "Vince Carter",
-    "code": "F106",
-    "profession": "Runner",
-    "color": "red",
+    "lastName": "Carter",
+    "firstName": "Vince",
+    "profile": "https://images.pexels.com/photos/1752757/pexels-photo-1752757.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "email": "user1@mail.com",
+    "code": "F107",
+    "profession": "Drywall Installer",
     "city": "Toronto",
     "branch": "Abacus",
-    "assigned": false
+    "assigned": "True"
+  },
+  {
+    "id": 8,
+    "lastName": "Frances",
+    "firstName": "Rossini",
+    "profile": "https://images.pexels.com/photos/1752757/pexels-photo-1752757.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "email": "user1@mail.com",
+    "code": "F108",
+    "profession": "Drywall Installer",
+    "city": "Toronto",
+    "branch": "Abacus",
+    "assigned": "True"
+  },
+  {
+    "id": 9,
+    "lastName": "Roxie",
+    "firstName": "Harvey",
+    "profile": "https://images.pexels.com/photos/1752757/pexels-photo-1752757.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "email": "user1@mail.com",
+    "code": "F109",
+    "profession": "Drywall Installer",
+    "city": "Toronto",
+    "branch": "Abacus",
+    "assigned": "True"
   }
 ]
