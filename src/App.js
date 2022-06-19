@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 import "./app.css";
 
 // React Router Dom
@@ -14,6 +15,20 @@ import NewEmployee from "./pages/newEmployee/NewEmployee";
 // import User from "./components/user/User";
 
 const App = () => {
+  const [employees, setEmployees] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get("//localhost:8080/api/employees")
+      .then((res) => {
+        // console.log("api-data", res.data);
+        setEmployees(res.data);
+      })
+      .catch((err) => {
+        console.log("Error", err);
+      });
+  }, []);
+
   return (
     <Router>
       <TopNav />
@@ -21,8 +36,14 @@ const App = () => {
         <Sidebar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/employees" element={<EmployeeList />} />
-          <Route path="/employee/:employeeId" element={<Employee />} />
+          <Route
+            path="/employees"
+            element={<EmployeeList employees={employees} />}
+          />
+          <Route
+            path="/employee/:employeeId"
+            element={<Employee employees={employees} />}
+          />
           <Route path="/newEmployee" element={<NewEmployee />} />
         </Routes>
       </div>
