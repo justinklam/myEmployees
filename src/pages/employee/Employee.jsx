@@ -1,6 +1,6 @@
 import React from "react";
 import "./employee.css";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 // MUI
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
@@ -14,6 +14,9 @@ import AssignmentIcon from "@mui/icons-material/Assignment";
 import UploadFileIcon from "@mui/icons-material/UploadFile";
 
 const Employee = () => {
+  const params = useParams();
+  console.log("params", params);
+
   return (
     <div className="employee">
       <div className="employeeTitleContainer">
