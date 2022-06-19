@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import axios from "axios";
 import "./newEmployee.css";
 
 const NewEmployee = () => {
@@ -17,12 +18,17 @@ const NewEmployee = () => {
 
   const handleChange = (e) => {
     const value = e.target.value;
-    console.log("value", value.lastName);
+    // console.log("value", value.lastName);
     setNewEmp({
       ...newEmp,
       [e.target.name]: value,
     });
-    console.log("newData---", newEmp);
+    // console.log("newData---", newEmp);
+  };
+
+  const handleSubmit = () => {
+    axios.post(`//localhost:8080/api/employees/create`, newEmp);
+    console.log("submitted");
   };
 
   return (
@@ -122,7 +128,7 @@ const NewEmployee = () => {
             <option value="false">False</option>
           </select>
         </div>
-        <button className="newEmployeeBtn" onClick={handleChange}>
+        <button className="newEmployeeBtn" onClick={handleSubmit}>
           Create New Employee
         </button>
       </form>
