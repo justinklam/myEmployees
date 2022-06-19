@@ -139,6 +139,7 @@ const Employee = () => {
                 <input
                   type="text"
                   placeholder="Kyle"
+                  // placeholder={emps[id].firstName}
                   className="employeeUpdateInput"
                 />
               </div>
@@ -147,6 +148,7 @@ const Employee = () => {
                 <input
                   type="text"
                   placeholder="Lowry"
+                  // placeholder={emps[id].lastName}
                   className="employeeUpdateInput"
                 />
               </div>
@@ -155,6 +157,7 @@ const Employee = () => {
                 <input
                   type="text"
                   placeholder="Profile"
+                  // placeholder={emps[id].profile}
                   className="employeeUpdateInput"
                 />
               </div>
@@ -163,6 +166,7 @@ const Employee = () => {
                 <input
                   type="email"
                   placeholder="user@mail.com"
+                  // placeholder={emps[id].email}
                   className="employeeUpdateInput"
                 />
               </div>
@@ -171,6 +175,7 @@ const Employee = () => {
                 <input
                   type="text"
                   placeholder="F100"
+                  // placeholder={emps[id].code}
                   className="employeeUpdateInput"
                 />
               </div>
@@ -179,6 +184,7 @@ const Employee = () => {
                 <input
                   type="text"
                   placeholder="Drywall Installer"
+                  // placeholder={emps[id].profession}
                   className="employeeUpdateInput"
                 />
               </div>
@@ -187,6 +193,7 @@ const Employee = () => {
                 <input
                   type="text"
                   placeholder="Toronto"
+                  // placeholder={emps[id].city}
                   className="employeeUpdateInput"
                 />
               </div>
@@ -195,6 +202,7 @@ const Employee = () => {
                 <input
                   type="text"
                   placeholder="Abacus"
+                  // placeholder={emps[id].branch}
                   className="employeeUpdateInput"
                 />
               </div>
@@ -203,6 +211,7 @@ const Employee = () => {
                 <input
                   type="text"
                   placeholder="True"
+                  // placeholder={emps[id].assigned}
                   className="employeeUpdateInput"
                 />
               </div>
