@@ -1,6 +1,6 @@
 import React from "react";
-import "./sidebar.css";
 import { Link } from "react-router-dom";
+import "./sidebar.css";
 
 // Icons
 import HomeIcon from "@mui/icons-material/Home";

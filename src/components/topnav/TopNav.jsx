@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./topNav.css";
 
 // Icons
@@ -18,7 +19,9 @@ const TopBar = () => {
         </div>
         <div className="topRight">
           <div className="topnavIconContainer">
-            <SettingsIcon className="topnavIcon" />
+            <Link to="/settings" className="link">
+              <SettingsIcon className="topnavIcon" />
+            </Link>
           </div>
           <div className="topnavIconContainer">
             <LightbulbIcon className="topnavIcon" />
