@@ -1,6 +1,7 @@
-import React from "react";
-import "./employee.css";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 import { Link, useParams } from "react-router-dom";
+import "./employee.css";
 
 // MUI
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
@@ -14,6 +15,20 @@ import AssignmentIcon from "@mui/icons-material/Assignment";
 import UploadFileIcon from "@mui/icons-material/UploadFile";
 
 const Employee = () => {
+  const [emps, setEmps] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get("//localhost:8080/api/employees")
+      .then((res) => {
+        console.log("api-data", res.data);
+        setEmps(res.data);
+      })
+      .catch((err) => {
+        console.log("Error", err);
+      });
+  }, []);
+
   const params = useParams();
   console.log("params", params);
 
