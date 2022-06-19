@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import "./employeeList.css";
@@ -8,39 +8,24 @@ import { DataGrid } from "@mui/x-data-grid";
 import EditIcon from "@mui/icons-material/Edit";
 import DeleteIcon from "@mui/icons-material/Delete";
 
-// Dummy Data
-// import { getEmployees, employeeRows } from "../../helpers/selectors";
-
-const EmployeeList = () => {
+const EmployeeList = (props) => {
   const [emps, setEmps] = useState([]);
 
-  useEffect(() => {
-    axios
-      .get("//localhost:8080/api/employees")
-      .then((res) => {
-        console.log("api-data", res.data);
-        setEmps(res.data);
+  const handleDelete = async (id) => {
+    axios.delete(`//localhost:8080/api/employees/delete/${id}`);
+    setEmps(
+      // filters through entire employee list
+      // if item id matches, it removes
+      emps.filter((emps) => {
+        return emps.id !== id;
       })
-      .catch((err) => {
-        console.log("Error", err);
-      });
-  }, []);
+    );
+    // setEmps(emps.filter((item) => item.id !== id));
 
-  // useEffect(() => {
-  //   getEmployees()
-  //     .then((res) => {
-  //       console.log("res", res[0]);
-  //       if (res.ok) {
-  //         return res.json();
-  //       }
-  //     })
-  //     .then((jsonRes) => setEmps(jsonRes));
-  // }, []);
-
-  const handleDelete = (id) => {
-    // filters through entire employee list
-    // if item id matches, it removes
-    setEmps(emps.filter((item) => item.id !== id));
+    // const response = await axios
+    //   .delete(`//localhost:8080/api/employees/delete/${id}`)
+    //   .then((res) => setEmps(res));
+    // console.log("response", response);
   };
 
   const columns = [
@@ -107,7 +92,7 @@ const EmployeeList = () => {
   return (
     <div className="employeeList">
       <DataGrid
-        rows={emps}
+        rows={props.employees}
         columns={columns}
         disableSelectionOnClick
         pageSize={10}
