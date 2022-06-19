@@ -15,7 +15,9 @@ import AssignmentIcon from "@mui/icons-material/Assignment";
 import UploadFileIcon from "@mui/icons-material/UploadFile";
 
 const Employee = () => {
+  const id = useParams().employeeId - 1;
   const [emps, setEmps] = useState([]);
+  console.log("useParams id---", id);
 
   useEffect(() => {
     axios
@@ -29,8 +31,8 @@ const Employee = () => {
       });
   }, []);
 
-  const params = useParams();
-  console.log("params", params);
+  // console.log("emps state", emps);
+  console.log("emps[id]---", emps[id]);
 
   return (
     <div className="employee">
@@ -49,9 +51,13 @@ const Employee = () => {
               className="employeeShowImg"
             />
             <div className="employeeShowTopTitle">
-              <span className="employeeShowUsername">Kyle Lowry</span>
+              <span className="employeeShowUsername">
+                Kyle Lowry
+                {/* {emps[id].firstName} {emps[id].lastName} */}
+              </span>
               <span className="employeeShowUserProfession">
                 Drywall Installer
+                {/* {emps[id].profession}  */}
               </span>
             </div>
           </div>
@@ -59,41 +65,68 @@ const Employee = () => {
             <span className="employeeShowBotTitle">Account Details</span>
             <div className="employeeShowInfo">
               <AccountCircleIcon className="employeeShowIcon" />
-              <span className="employeeShowInfoTitle">Kyle</span>
+              <span className="employeeShowInfoTitle">
+                Kyle
+                {/* {emps[id].firstName} */}
+              </span>
             </div>
             <div className="employeeShowInfo">
               <AccountCircleIcon className="employeeShowIcon" />
-              <span className="employeeShowInfoTitle">Lowry</span>
+              <span className="employeeShowInfoTitle">
+                Lowry
+                {/* {emps[id].lastName} */}
+              </span>
             </div>
             <div className="employeeShowInfo">
               <CameraAltIcon className="employeeShowIcon" />
-              <span className="employeeShowInfoTitle">Profile</span>
+              <span className="employeeShowInfoTitle">
+                Profile
+                {/* {emps[id].profile} */}
+              </span>
             </div>
             <div className="employeeShowInfo">
               <EmailIcon className="employeeShowIcon" />
-              <span className="employeeShowInfoTitle">user@mail.com</span>
+              <span className="employeeShowInfoTitle">
+                user@mail.com
+                {/* {emps[id].email} */}
+              </span>
             </div>
             <span className="employeeShowBotTitle">Employment Details</span>
             <div className="employeeShowInfo">
               <CodeIcon className="employeeShowIcon" />
-              <span className="employeeShowInfoTitle">F100</span>
+              <span className="employeeShowInfoTitle">
+                F100
+                {/* {emps[id].code} */}
+              </span>
             </div>
             <div className="employeeShowInfo">
               <WorkIcon className="employeeShowIcon" />
-              <span className="employeeShowInfoTitle">Drywall Installer</span>
+              <span className="employeeShowInfoTitle">
+                Drywall Installer
+                {/* {emps[id].profession} */}
+              </span>
             </div>
             <span className="employeeShowBotTitle">Location Details</span>
             <div className="employeeShowInfo">
               <LocationCityIcon className="employeeShowIcon" />
-              <span className="employeeShowInfoTitle">Toronto</span>
+              <span className="employeeShowInfoTitle">
+                Toronto
+                {/* {emps[id].city} */}
+              </span>
             </div>
             <div className="employeeShowInfo">
               <ParkIcon className="employeeShowIcon" />
-              <span className="employeeShowInfoTitle">Abacus</span>
+              <span className="employeeShowInfoTitle">
+                Abacus
+                {/* {emps[id].branch} */}
+              </span>
             </div>
             <div className="employeeShowInfo">
               <AssignmentIcon className="employeeShowIcon" />
-              <span className="employeeShowInfoTitle">True</span>
+              <span className="employeeShowInfoTitle">
+                True
+                {/* {emps[id].assigned} */}
+              </span>
             </div>
           </div>
         </div>
