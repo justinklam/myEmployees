@@ -21,9 +21,33 @@ const corsOptions = {
   optionsSuccessStatus: 200,
 };
 
-// retrieve employees
+// Retrieve Employees
 app.get("/api/employees", cors(corsOptions), (req, res, next) => {
   console.log("get - /api/employees");
+  res.setHeader("Content-Type", "application/json");
+  res.status(200);
+  res.send(JSON.stringify(employees, null, 2));
+});
+
+// Create Employee
+app.post("/api/createEmployee", cors(corsOptions), (req, res, next) => {
+  console.log("post-create - /api/employees");
+  res.setHeader("Content-Type", "application/json");
+  res.status(200);
+  res.send(JSON.stringify(employees, null, 2));
+});
+
+// Update Employee
+app.put("/api/updateEmployee", cors(corsOptions), (req, res, next) => {
+  console.log("put-update - /api/employees");
+  res.setHeader("Content-Type", "application/json");
+  res.status(200);
+  res.send(JSON.stringify(employees, null, 2));
+});
+
+// Delete Employee
+app.delete("/api/deleteEmployee", cors(corsOptions), (req, res, next) => {
+  console.log("delete - /api/employees");
   res.setHeader("Content-Type", "application/json");
   res.status(200);
   res.send(JSON.stringify(employees, null, 2));
