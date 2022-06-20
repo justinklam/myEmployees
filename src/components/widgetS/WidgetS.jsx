@@ -9,8 +9,6 @@ import "./widgetS.css";
 import VisibilityIcon from "@mui/icons-material/Visibility";
 
 const WidgetS = (props) => {
-  console.log("widget props", props.employees);
-
   return (
     <div className="widgetSm">
       <span className="widgetSmTitle">Employee List - Quick Look</span>
