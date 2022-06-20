@@ -1,7 +1,7 @@
 .topnav {
   width: 100%;
   height: 50px;
-  background-color: white;
+  background-color: rgb(250, 250, 255);
   z-index: 999;
   opacity: 0.9;
   position: sticky;
