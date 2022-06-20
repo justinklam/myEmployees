@@ -17,18 +17,18 @@ const WidgetS = (props) => {
       <ul className="widgetSmList">
         <li className="widgetSmListItem">
           <img
-            src={props.employees[0].profile}
+            src="https://images.pexels.com/photos/617278/pexels-photo-617278.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             alt=""
             className="widgetSmImg"
           />
           <div className="widgetSmUser">
             <div className="widgetSmUsername">
-              {/* Name */}
-              Employee Code: {props.employees[0].code}
+              Employee Code: F101
+              {/* Employee Code: {props.employees[0].code} */}
             </div>
             <div className="widgetSmUserProfession">
-              {/* Job */}
-              {props.employees[0].profession}
+              Drywall Installer
+              {/* {props.employees[0].profession} */}
             </div>
           </div>
           <Link to={"/employee/1"}>
@@ -40,18 +40,18 @@ const WidgetS = (props) => {
         </li>
         <li className="widgetSmListItem">
           <img
-            src={props.employees[1].profile}
+            src="https://images.pexels.com/photos/104827/cat-pet-animal-domestic-104827.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             alt=""
             className="widgetSmImg"
           />
           <div className="widgetSmUser">
             <div className="widgetSmUsername">
-              {/* Name */}
-              Employee Code: {props.employees[1].code}
+              Employee Code: F102
+              {/* Employee Code: {props.employees[1].code} */}
             </div>
             <div className="widgetSmUserProfession">
-              {/* Job */}
-              {props.employees[1].profession}
+              Drywall Installer
+              {/* {props.employees[1].profession} */}
             </div>
           </div>
           <Link to={"/employee/2"}>
@@ -63,18 +63,18 @@ const WidgetS = (props) => {
         </li>
         <li className="widgetSmListItem">
           <img
-            src={props.employees[2].profile}
+            src="https://images.pexels.com/photos/416160/pexels-photo-416160.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             alt=""
             className="widgetSmImg"
           />
           <div className="widgetSmUser">
             <div className="widgetSmUsername">
-              {/* Name */}
-              Employee Code: {props.employees[2].code}
+              Employee Code: F103
+              {/* Employee Code: {props.employees[2].code} */}
             </div>
             <div className="widgetSmUserProfession">
-              {/* Job */}
-              {props.employees[2].profession}
+              Drywall Installer
+              {/* {props.employees[2].profession} */}
             </div>
           </div>
           <Link to={"/employee/3"}>
@@ -86,18 +86,18 @@ const WidgetS = (props) => {
         </li>
         <li className="widgetSmListItem">
           <img
-            src={props.employees[3].profile}
+            src="https://images.pexels.com/photos/209037/pexels-photo-209037.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             alt=""
             className="widgetSmImg"
           />
           <div className="widgetSmUser">
             <div className="widgetSmUsername">
-              {/* Name */}
-              Employee Code: {props.employees[3].code}
+              Employee Code: F104
+              {/* Employee Code: {props.employees[3].code} */}
             </div>
             <div className="widgetSmUserProfession">
-              {/* Job */}
-              {props.employees[3].profession}
+              Drywall Installer
+              {/* {props.employees[3].profession} */}
             </div>
           </div>
           <Link to={"/employee/4"}>
@@ -109,18 +109,18 @@ const WidgetS = (props) => {
         </li>
         <li className="widgetSmListItem">
           <img
-            src={props.employees[4].profile}
+            src="https://images.pexels.com/photos/774731/pexels-photo-774731.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             alt=""
             className="widgetSmImg"
           />
           <div className="widgetSmUser">
             <div className="widgetSmUsername">
-              {/* Name */}
-              Employee Code: {props.employees[4].code}
+              Employee Code: F105
+              {/* Employee Code: {props.employees[0].code} */}
             </div>
             <div className="widgetSmUserProfession">
-              {/* Job */}
-              {props.employees[4].profession}
+              Drywall Installer
+              {/* {props.employees[4].profession} */}
             </div>
           </div>
           <Link to={"/employee/5"}>
