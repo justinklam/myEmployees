@@ -180,7 +180,7 @@ app.delete("/api/employees/delete/:id", cors(corsOptions), (req, res) => {
     employees.find((value) => value.id === req.params.id.toString())
   );
   employees.splice(index, 1);
-  console.log("Employee deleted successfully");
+  console.log(`Employee deleted successfully`);
   res.status(200);
   res.send(JSON.stringify(employees, null, 2));
 });
