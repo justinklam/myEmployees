@@ -1,3 +1,22 @@
 .settings {
   flex: 8;
+  padding: 20px;
+}
+
+.settingsTitleContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.settingsContainer {
+  display: flex;
+  margin-top: 25px;
+}
+
+.settingsShow {
+  flex: 1;
+  padding: 20px;
+  -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
 }
