@@ -210,7 +210,7 @@ const Employee = (props) => {
             <div className="employeeUpdateRight">
               <div className="employeeUpdateUpload">
                 <img
-                  src="https://images.pexels.com/photos/5468093/pexels-photo-5468093.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  src={props.employees[id].profile}
                   alt=""
                   className="employeeUpdateImg"
                 />
