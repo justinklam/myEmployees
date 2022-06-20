@@ -152,9 +152,10 @@ app.get("/api/employees", cors(corsOptions), (req, res) => {
 // Create Employee
 app.post("/api/employees/create", cors(corsOptions), (req, res) => {
   console.log("post-create - /api/employees");
+  console.log("post-create", req.body);
   employees.push(req.body);
-  console.log("Success");
-  res.json("Employee Created");
+  // res.json("Employee Created");
+  res.send(JSON.stringify(employees, null, 2));
   console.log("after post", employees);
 
   // fs.writeFile(
