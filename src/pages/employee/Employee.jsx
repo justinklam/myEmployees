@@ -39,7 +39,7 @@ const Employee = (props) => {
           <div className="employeeShowTop">
             <img
               src={props.employees[id].profile}
-              alt="Profile Picture Error"
+              alt=""
               className="employeeShowImg"
             />
             <div className="employeeShowTopTitle">
