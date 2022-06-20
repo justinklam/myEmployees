@@ -18,23 +18,41 @@ const NewEmployee = () => {
 
   const handleChange = (e) => {
     const value = e.target.value;
-    // console.log("value", value.lastName);
+    // console.log("value", value);
     setNewEmp({
       ...newEmp,
+      id: newEmp.code,
       [e.target.name]: value,
     });
-    // console.log("newData---", newEmp);
+    console.log("newData---", newEmp);
   };
 
-  const handleSubmit = () => {
-    axios.post(`//localhost:8080/api/employees/create`, newEmp);
-    console.log("submitted");
+  const handleSubmit = (e) => {
+    e.preventdefault();
+    axios
+      .post(`//localhost:8080/api/employees/create`, newEmp)
+      // {
+      //   id: newEmp.code,
+      //   lastName: newEmp.lastName,
+      //   firstName: newEmp.firstName,
+      //   profile: newEmp.profile,
+      //   email: newEmp.email,
+      //   code: newEmp.code,
+      //   profession: newEmp.profession,
+      //   city: newEmp.city,
+      //   branch: newEmp.branch,
+      //   assigned: newEmp.assigned,
+      // })
+      .then((res) => {
+        console.log(res.data);
+      });
+    console.log("Submitted");
   };
 
   return (
     <div className="newEmployee">
       <h1 className="newEmployeeTitle">New Employee</h1>
-      <form className="newEmployeeForm">
+      <form className="newEmployeeForm" onSubmit={(e) => handleSubmit(e)}>
         <div className="newEmployeeItem">
           <label>First Name</label>
           <input
@@ -128,9 +146,7 @@ const NewEmployee = () => {
             <option value="false">False</option>
           </select>
         </div>
-        <button className="newEmployeeBtn" onClick={handleSubmit}>
-          Create New Employee
-        </button>
+        <button className="newEmployeeBtn">Create New Employee</button>
       </form>
     </div>
   );
