@@ -11,9 +11,9 @@ const employees = [
     lastName: "Lowry",
     firstName: "Kyle",
     profile:
-      "https://images.pexels.com/photos/5468093/pexels-photo-5468093.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/617278/pexels-photo-617278.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     email: "user1@mail.com",
-    code: "F100",
+    code: "F101",
     profession: "Drywall Installer",
     city: "Toronto",
     branch: "Abacus",
@@ -24,7 +24,7 @@ const employees = [
     lastName: "DeRozan",
     firstName: "DeMar",
     profile:
-      "https://images.pexels.com/photos/1752757/pexels-photo-1752757.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/104827/cat-pet-animal-domestic-104827.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     email: "user1@mail.com",
     code: "F102",
     profession: "Drywall Installer",
@@ -37,7 +37,7 @@ const employees = [
     lastName: "Van Vleet",
     firstName: "Fred",
     profile:
-      "https://images.pexels.com/photos/1752757/pexels-photo-1752757.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/416160/pexels-photo-416160.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     email: "user1@mail.com",
     code: "F103",
     profession: "Drywall Installer",
@@ -50,7 +50,7 @@ const employees = [
     lastName: "Valanciunas",
     firstName: "Jonas",
     profile:
-      "https://images.pexels.com/photos/1752757/pexels-photo-1752757.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/209037/pexels-photo-209037.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     email: "user1@mail.com",
     code: "F104",
     profession: "Drywall Installer",
@@ -63,7 +63,7 @@ const employees = [
     lastName: "Bosh",
     firstName: "Chris",
     profile:
-      "https://images.pexels.com/photos/1752757/pexels-photo-1752757.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/774731/pexels-photo-774731.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     email: "user1@mail.com",
     code: "F105",
     profession: "Drywall Installer",
@@ -76,7 +76,7 @@ const employees = [
     lastName: "Camby",
     firstName: "Marcus",
     profile:
-      "https://images.pexels.com/photos/1752757/pexels-photo-1752757.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/2194261/pexels-photo-2194261.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     email: "user1@mail.com",
     code: "F106",
     profession: "Drywall Installer",
@@ -89,7 +89,7 @@ const employees = [
     lastName: "Carter",
     firstName: "Vince",
     profile:
-      "https://images.pexels.com/photos/1752757/pexels-photo-1752757.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/127028/pexels-photo-127028.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     email: "user1@mail.com",
     code: "F107",
     profession: "Drywall Installer",
@@ -99,10 +99,10 @@ const employees = [
   },
   {
     id: 8,
-    lastName: "Frances",
-    firstName: "Rossini",
+    lastName: "Lin",
+    firstName: "Jeremy",
     profile:
-      "https://images.pexels.com/photos/1752757/pexels-photo-1752757.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/96938/pexels-photo-96938.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     email: "user1@mail.com",
     code: "F108",
     profession: "Drywall Installer",
@@ -112,10 +112,10 @@ const employees = [
   },
   {
     id: 9,
-    lastName: "Roxie",
-    firstName: "Harvey",
+    lastName: "Siakam",
+    firstName: "Pascal",
     profile:
-      "https://images.pexels.com/photos/1752757/pexels-photo-1752757.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/257532/pexels-photo-257532.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     email: "user1@mail.com",
     code: "F109",
     profession: "Drywall Installer",
