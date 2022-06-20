@@ -5,14 +5,14 @@ import "./home.css";
 import WidgetS from "../../components/widgetS/WidgetS";
 import WidgetL from "../../components/widgetL/WidgetL";
 
-const Home = () => {
+const Home = (props) => {
   return (
     <div className="home">
       <div className="homeTitleContainer">
         <h1 className="homeTitle">Home</h1>
         <div className="homeWidgets">
-          <WidgetS />
-          <WidgetL />
+          <WidgetS employees={props.employees} />
+          <WidgetL employees={props.employees} />
         </div>
       </div>
     </div>

@@ -36,7 +36,7 @@ const App = () => {
       <div className="container">
         <Sidebar />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home employees={employees} />} />
           <Route
             path="/employees"
             element={<EmployeeList employees={employees} />}

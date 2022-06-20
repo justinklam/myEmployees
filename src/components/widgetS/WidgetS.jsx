@@ -7,10 +7,12 @@ import "./widgetS.css";
 // Icons
 import VisibilityIcon from "@mui/icons-material/Visibility";
 
-const WidgetS = () => {
+const WidgetS = (props) => {
+  console.log("widget props", props.employees);
+
   return (
     <div className="widgetSm">
-      <span className="widgetSmTitle">Employee List - At A Glance</span>
+      <span className="widgetSmTitle">Employee List - Quick Look</span>
       <ul className="widgetSmList">
         <li className="widgetSmListItem">
           <img
