@@ -25,9 +25,14 @@ const Employee = (props) => {
     <div className="employee">
       <div className="employeeTitleContainer">
         <h1 className="employeeTitle">Edit Employee</h1>
-        <Link to="/newEmployee">
-          <button className="employeeCreateButton">Add New</button>
-        </Link>
+        <div className="employeeButtons">
+          <Link to="/employees">
+            <button className="employeeCreateButton">Employee List</button>
+          </Link>
+          <Link to="/newEmployee">
+            <button className="employeeCreateButton">Add New</button>
+          </Link>
+        </div>
       </div>
       <div className="employeeContainer">
         <div className="employeeShow">
