@@ -9,18 +9,17 @@ import EditIcon from "@mui/icons-material/Edit";
 import DeleteIcon from "@mui/icons-material/Delete";
 
 const EmployeeList = (props) => {
-  const [emps, setEmps] = useState([]);
+  // const [emps, setEmps] = useState([]);
 
-  const handleDelete = async (id) => {
+  const handleDelete = (id) => {
     axios.delete(`//localhost:8080/api/employees/delete/${id}`);
-    setEmps(
-      // filters through entire employee list
-      // if item id matches, it removes
-      emps.filter((emps) => {
-        return emps.id !== id;
-      })
-    );
-    // setEmps(emps.filter((item) => item.id !== id));
+    // setEmps(
+    //   // filters through entire employee list
+    //   // if item id matches, it removes
+    //   emps.filter((emps) => {
+    //     return emps.id !== id;
+    //   })
+    // );
 
     // const response = await axios
     //   .delete(`//localhost:8080/api/employees/delete/${id}`)
@@ -91,6 +90,7 @@ const EmployeeList = (props) => {
 
   return (
     <div className="employeeList">
+      <h1 className="employeeListTitle">Employee List</h1>
       <DataGrid
         rows={props.employees}
         columns={columns}
