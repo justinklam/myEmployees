@@ -4,7 +4,7 @@ import "./widgetL.css";
 const WidgetL = () => {
   return (
     <div className="widgetLg">
-      <h3 className="widgetLgTitle">Employee List</h3>
+      <span className="widgetLgTitle">At a Glance</span>
     </div>
   );
 };
