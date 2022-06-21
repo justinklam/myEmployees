@@ -44,3 +44,16 @@ Open http://localhost:3000 to view it in your browser.
 The page will reload when you make changes.
 You may also see any lint errors in the console.
 ```
+
+## Features/Road Map
+
+- [x] Create a Dashboard style Top-Nav and Side-Nav Component
+- [x] Component to list out all Employees in a table with Sort, Filter and Search options
+- [x] Component to Edit Employees
+- [x] Component to Add New Employees
+- [ ] Widgets for the Home Page for recently added employees and a quick-look widget
+- [ ] Settings Menu
+- [ ] Login and authentication
+- [x] Read from .JSON Database
+- [ ] Create/Update/Delete routes to Database
+- [ ] Dark Mode
