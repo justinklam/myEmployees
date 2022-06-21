@@ -30,7 +30,7 @@ const NewEmployee = () => {
   const handleSubmit = (e) => {
     e.preventdefault();
     axios
-      .post(`//localhost:8080/api/employees/create`, newEmp)
+      .post(`http://localhost:8080/api/employees/create/`, newEmp)
       // {
       //   id: newEmp.code,
       //   lastName: newEmp.lastName,
@@ -45,6 +45,9 @@ const NewEmployee = () => {
       // })
       .then((res) => {
         console.log(res.data);
+      })
+      .catch(function (error) {
+        console.log(error);
       });
     console.log("Submitted");
   };
@@ -52,7 +55,11 @@ const NewEmployee = () => {
   return (
     <div className="newEmployee">
       <h1 className="newEmployeeTitle">New Employee</h1>
-      <form className="newEmployeeForm" onSubmit={(e) => handleSubmit(e)}>
+      <form
+        className="newEmployeeForm"
+        id="empForm"
+        onSubmit={(e) => handleSubmit(e)}
+      >
         <div className="newEmployeeItem">
           <label>First Name</label>
           <input
@@ -146,7 +153,9 @@ const NewEmployee = () => {
             <option value="false">False</option>
           </select>
         </div>
-        <button className="newEmployeeBtn">Create New Employee</button>
+        <button className="newEmployeeBtn" form="empForm" type="submit">
+          Create New Employee
+        </button>
       </form>
     </div>
   );
