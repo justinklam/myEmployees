@@ -1,7 +1,9 @@
 {
-  "name": "my-app",
+  "name": "myEmployees",
   "version": "0.1.0",
   "private": true,
+  "author": "Justin Lam",
+  "url": "https://github.com/justinklam",
   "proxy": "http://localhost:8080",
   "dependencies": {
     "@emotion/react": "^11.9.3",
