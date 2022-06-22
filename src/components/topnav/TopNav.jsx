@@ -7,7 +7,7 @@ import SettingsIcon from "@mui/icons-material/Settings";
 import LightbulbIcon from "@mui/icons-material/Lightbulb";
 import SearchIcon from "@mui/icons-material/Search";
 
-const TopBar = () => {
+const TopNav = () => {
   return (
     <div className="topnav">
       <div className="topnavWrapper">
@@ -43,4 +43,4 @@ const TopBar = () => {
   );
 };
 
-export default TopBar;
+export default TopNav;
