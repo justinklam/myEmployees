@@ -33,7 +33,7 @@ const TopBar = () => {
             <LightbulbIcon className="topnavIcon" />
           </div>
           <img
-            src="https://images.pexels.com/photos/3184454/pexels-photo-3184454.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+            src="https://images.pexels.com/photos/1049764/pexels-photo-1049764.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
             alt=""
             className="topAvatar"
           />
