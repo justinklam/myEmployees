@@ -28,17 +28,21 @@ app.get("/api/employees", cors(corsOptions), (req, res) => {
 app.post("/api/employees/create", cors(corsOptions), (req, res) => {
   console.log("post-create - /api/employees");
   console.log("post-create", req.body);
+
+  let newEmployee = req.body;
+  console.log("post-newEmployee", newEmployee);
+
   // employees.push(req.body);
   // res.json("Employee Created");
   // res.send(JSON.stringify(employees, null, 2));
 
   fs.writeFile(
     employees,
-    JSON.stringify(req.body, null, 2),
+    JSON.stringify(newEmployee, null, 2),
     function writeJSON(err) {
       if (err) return console.log("Post-Error", err);
-      console.log(JSON.stringify(req.body));
-      console.log("Adding ", req.body);
+      console.log(JSON.stringify(newEmployee));
+      console.log("Adding ", newEmployee);
     }
   );
   console.log("after post", employees);
