@@ -13,11 +13,15 @@ import EmployeeList from "./pages/employeeList/EmployeeList";
 import Employee from "./pages/employee/Employee";
 import NewEmployee from "./pages/newEmployee/NewEmployee";
 import Settings from "./pages/settings/Settings";
+import Loading from "./components/loading/Loading";
 
 const App = () => {
+  const [loading, setLoading] = useState(true);
   const [employees, setEmployees] = useState([]);
 
   useEffect(() => {
+    setTimeout(() => setLoading(false), 6000);
+
     axios
       .get("//localhost:8080/api/employees")
       .then((res) => {
@@ -30,25 +34,31 @@ const App = () => {
   }, []);
 
   return (
-    <Router>
-      <TopNav />
-      <div className="container">
-        <Sidebar />
-        <Routes>
-          <Route path="/" element={<Home employees={employees} />} />
-          <Route
-            path="/employees"
-            element={<EmployeeList employees={employees} />}
-          />
-          <Route
-            path="/employee/:employeeId"
-            element={<Employee employees={employees} />}
-          />
-          <Route path="/newEmployee" element={<NewEmployee />} />
-          <Route path="/settings" element={<Settings />} />
-        </Routes>
-      </div>
-    </Router>
+    <>
+      {loading === false ? (
+        <Router>
+          <TopNav />
+          <div className="container">
+            <Sidebar />
+            <Routes>
+              <Route path="/" element={<Home employees={employees} />} />
+              <Route
+                path="/employees"
+                element={<EmployeeList employees={employees} />}
+              />
+              <Route
+                path="/employee/:employeeId"
+                element={<Employee employees={employees} />}
+              />
+              <Route path="/newEmployee" element={<NewEmployee />} />
+              <Route path="/settings" element={<Settings />} />
+            </Routes>
+          </div>
+        </Router>
+      ) : (
+        <Loading />
+      )}
+    </>
   );
 };
 
