@@ -13,7 +13,6 @@ import EmployeeList from "./pages/employeeList/EmployeeList";
 import Employee from "./pages/employee/Employee";
 import NewEmployee from "./pages/newEmployee/NewEmployee";
 import Settings from "./pages/settings/Settings";
-// import User from "./components/user/User";
 
 const App = () => {
   const [employees, setEmployees] = useState([]);
@@ -49,7 +48,6 @@ const App = () => {
           <Route path="/settings" element={<Settings />} />
         </Routes>
       </div>
-      {/* <User /> */}
     </Router>
   );
 };
