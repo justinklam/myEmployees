@@ -20,7 +20,7 @@ const App = () => {
   const [employees, setEmployees] = useState([]);
 
   useEffect(() => {
-    setTimeout(() => setLoading(false), 6000);
+    setTimeout(() => setLoading(false), 2000);
 
     axios
       .get("//localhost:8080/api/employees")
