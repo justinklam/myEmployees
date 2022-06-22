@@ -28,10 +28,9 @@ app.get("/api/employees", cors(corsOptions), (req, res) => {
 app.post("/api/employees/create", cors(corsOptions), (req, res) => {
   console.log("post-create - /api/employees");
   console.log("post-create", req.body);
-  employees.push(req.body);
+  // employees.push(req.body);
   // res.json("Employee Created");
-  res.send(JSON.stringify(employees, null, 2));
-  console.log("after post", employees);
+  // res.send(JSON.stringify(employees, null, 2));
 
   fs.writeFile(
     employees,
@@ -42,6 +41,7 @@ app.post("/api/employees/create", cors(corsOptions), (req, res) => {
       console.log("Adding ", req.body);
     }
   );
+  console.log("after post", employees);
 });
 
 // Update Employee
