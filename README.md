@@ -30,7 +30,8 @@ Core:
 - CSS
 
 Other:
-Material UI
+Material UI - Data-Grid
+Material UI - Icons
 ```
 
 ## Instructions
