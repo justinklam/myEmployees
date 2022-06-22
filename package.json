@@ -4,6 +4,7 @@
   "private": true,
   "author": "Justin Lam",
   "url": "https://github.com/justinklam",
+  "homepage": "https://github.com/justinklam/myEmployees",
   "proxy": "http://localhost:8080",
   "dependencies": {
     "@emotion/react": "^11.9.3",
