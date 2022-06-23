@@ -28,9 +28,9 @@ const NewEmployee = () => {
   };
 
   const handleSubmit = (e) => {
-    e.preventdefault();
+    e.preventDefault();
     axios
-      .post(`http://localhost:8080/api/employees/create/`, newEmp)
+      .post(`//localhost:8080/api/employees/create`, newEmp)
       // {
       //   id: newEmp.code,
       //   lastName: newEmp.lastName,
@@ -153,7 +153,12 @@ const NewEmployee = () => {
             <option value="false">False</option>
           </select>
         </div>
-        <button className="newEmployeeBtn" form="empForm" type="submit">
+        <button
+          className="newEmployeeBtn"
+          form="empForm"
+          type="submit"
+          onClick={handleSubmit}
+        >
           Create New Employee
         </button>
       </form>
