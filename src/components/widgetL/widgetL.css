@@ -9,3 +9,89 @@
   font-size: 25px;
   font-weight: 600;
 }
+
+.widgetLgButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.widgetLgButton {
+  width: 150px;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: rgb(86, 86, 86);
+  font-size: 16px;
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.widgetLgButton:hover {
+  background-color: rgb(217, 233, 250);
+}
+
+.widgetLgContainer {
+  display: flex;
+  margin-top: 25px;
+}
+
+.widgetLgShow {
+  flex: 1;
+  padding: 20px;
+  -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+}
+
+.widgetLgShowTop {
+  display: flex;
+  align-items: center;
+}
+
+.widgetLgShowImg {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.widgetLgShowTopTitle {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.widgetLgShowUsername {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.widgetLgShowUserProfession {
+  font-weight: 300;
+}
+
+.widgetLgShowBottom {
+  margin-top: 25px;
+}
+
+.widgetLgShowBottomTitle {
+  font-size: 15px;
+  font-weight: 600;
+  color: rgb(86, 86, 86);
+}
+
+.widgetLgShowInfo {
+  display: flex;
+  align-items: center;
+  margin: 20px 0px;
+  color: rgb(24, 26, 24);
+}
+
+.widgetLgShowIcon {
+  font-size: 30px !important;
+}
+
+.widgetLgShowInfoTitle {
+  margin-left: 10px;
+}
