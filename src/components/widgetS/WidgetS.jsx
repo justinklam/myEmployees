@@ -15,7 +15,7 @@ const WidgetS = (props) => {
       <ul className="widgetSmList">
         <li className="widgetSmListItem">
           <img
-            src="https://images.pexels.com/photos/617278/pexels-photo-617278.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            src={props.employees[0].profile}
             alt=""
             className="widgetSmImg"
           />
@@ -36,7 +36,7 @@ const WidgetS = (props) => {
         </li>
         <li className="widgetSmListItem">
           <img
-            src="https://images.pexels.com/photos/104827/cat-pet-animal-domestic-104827.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            src={props.employees[1].profile}
             alt=""
             className="widgetSmImg"
           />
@@ -57,7 +57,7 @@ const WidgetS = (props) => {
         </li>
         <li className="widgetSmListItem">
           <img
-            src="https://images.pexels.com/photos/416160/pexels-photo-416160.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            src={props.employees[2].profile}
             alt=""
             className="widgetSmImg"
           />
@@ -78,7 +78,7 @@ const WidgetS = (props) => {
         </li>
         <li className="widgetSmListItem">
           <img
-            src="https://images.pexels.com/photos/209037/pexels-photo-209037.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            src={props.employees[3].profile}
             alt=""
             className="widgetSmImg"
           />
@@ -99,7 +99,7 @@ const WidgetS = (props) => {
         </li>
         <li className="widgetSmListItem">
           <img
-            src="https://images.pexels.com/photos/774731/pexels-photo-774731.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            src={props.employees[4].profile}
             alt=""
             className="widgetSmImg"
           />
@@ -120,7 +120,7 @@ const WidgetS = (props) => {
         </li>
         <li className="widgetSmListItem">
           <img
-            src="https://images.pexels.com/photos/2194261/pexels-photo-2194261.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            src={props.employees[5].profile}
             alt=""
             className="widgetSmImg"
           />
@@ -141,7 +141,7 @@ const WidgetS = (props) => {
         </li>
         <li className="widgetSmListItem">
           <img
-            src="https://images.pexels.com/photos/127028/pexels-photo-127028.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            src={props.employees[6].profile}
             alt=""
             className="widgetSmImg"
           />
@@ -162,7 +162,7 @@ const WidgetS = (props) => {
         </li>
         <li className="widgetSmListItem">
           <img
-            src="https://images.pexels.com/photos/96938/pexels-photo-96938.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            src={props.employees[7].profile}
             alt=""
             className="widgetSmImg"
           />
@@ -183,7 +183,7 @@ const WidgetS = (props) => {
         </li>
         <li className="widgetSmListItem">
           <img
-            src="https://images.pexels.com/photos/257532/pexels-photo-257532.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            src={props.employees[8].profile}
             alt=""
             className="widgetSmImg"
           />
