@@ -47,7 +47,6 @@ const Employee = (props) => {
                 {props.employees[id].firstName} {props.employees[id].lastName}
               </span>
               <span className="employeeShowUserProfession">
-                {/* Drywall Installer */}
                 {props.employees[id].profession}
               </span>
             </div>
@@ -57,28 +56,24 @@ const Employee = (props) => {
             <div className="employeeShowInfo">
               <AccountCircleIcon className="employeeShowIcon" />
               <span className="employeeShowInfoTitle">
-                {/* Kyle */}
                 {props.employees[id].firstName}
               </span>
             </div>
             <div className="employeeShowInfo">
               <AccountCircleIcon className="employeeShowIcon" />
               <span className="employeeShowInfoTitle">
-                {/* Lowry */}
                 {props.employees[id].lastName}
               </span>
             </div>
             <div className="employeeShowInfo">
               <CameraAltIcon className="employeeShowIcon" />
               <span className="employeeShowInfoTitle">
-                {/* Profile */}
                 {props.employees[id].profile}
               </span>
             </div>
             <div className="employeeShowInfo">
               <EmailIcon className="employeeShowIcon" />
               <span className="employeeShowInfoTitle">
-                {/* user@mail.com */}
                 {props.employees[id].email}
               </span>
             </div>
@@ -86,14 +81,12 @@ const Employee = (props) => {
             <div className="employeeShowInfo">
               <CodeIcon className="employeeShowIcon" />
               <span className="employeeShowInfoTitle">
-                {/* F100 */}
                 {props.employees[id].code}
               </span>
             </div>
             <div className="employeeShowInfo">
               <WorkIcon className="employeeShowIcon" />
               <span className="employeeShowInfoTitle">
-                {/* Drywall Installer */}
                 {props.employees[id].profession}
               </span>
             </div>
@@ -101,21 +94,18 @@ const Employee = (props) => {
             <div className="employeeShowInfo">
               <LocationCityIcon className="employeeShowIcon" />
               <span className="employeeShowInfoTitle">
-                {/* Toronto */}
                 {props.employees[id].city}
               </span>
             </div>
             <div className="employeeShowInfo">
               <ParkIcon className="employeeShowIcon" />
               <span className="employeeShowInfoTitle">
-                {/* Abacus */}
                 {props.employees[id].branch}
               </span>
             </div>
             <div className="employeeShowInfo">
               <AssignmentIcon className="employeeShowIcon" />
               <span className="employeeShowInfoTitle">
-                {/* True */}
                 {props.employees[id].assigned}
               </span>
             </div>
@@ -129,7 +119,6 @@ const Employee = (props) => {
                 <label>First Name</label>
                 <input
                   type="text"
-                  // placeholder="Kyle"
                   placeholder={props.employees[id].firstName}
                   className="employeeUpdateInput"
                 />
@@ -138,7 +127,6 @@ const Employee = (props) => {
                 <label>Last Name</label>
                 <input
                   type="text"
-                  // placeholder="Lowry"
                   placeholder={props.employees[id].lastName}
                   className="employeeUpdateInput"
                 />
@@ -147,7 +135,6 @@ const Employee = (props) => {
                 <label>Profile</label>
                 <input
                   type="text"
-                  // placeholder="Profile"
                   placeholder={props.employees[id].profile}
                   className="employeeUpdateInput"
                 />
@@ -156,7 +143,6 @@ const Employee = (props) => {
                 <label>Email</label>
                 <input
                   type="email"
-                  // placeholder="user@mail.com"
                   placeholder={props.employees[id].email}
                   className="employeeUpdateInput"
                 />
@@ -165,7 +151,6 @@ const Employee = (props) => {
                 <label>Code</label>
                 <input
                   type="text"
-                  // placeholder="F100"
                   placeholder={props.employees[id].code}
                   className="employeeUpdateInput"
                 />
@@ -174,7 +159,6 @@ const Employee = (props) => {
                 <label>Profession</label>
                 <input
                   type="text"
-                  // placeholder="Drywall Installer"
                   placeholder={props.employees[id].profession}
                   className="employeeUpdateInput"
                 />
@@ -183,7 +167,6 @@ const Employee = (props) => {
                 <label>City</label>
                 <input
                   type="text"
-                  // placeholder="Toronto"
                   placeholder={props.employees[id].city}
                   className="employeeUpdateInput"
                 />
@@ -192,7 +175,6 @@ const Employee = (props) => {
                 <label>Branch</label>
                 <input
                   type="text"
-                  // placeholder="Abacus"
                   placeholder={props.employees[id].branch}
                   className="employeeUpdateInput"
                 />
@@ -201,7 +183,6 @@ const Employee = (props) => {
                 <label>Assigned</label>
                 <input
                   type="text"
-                  // placeholder="True"
                   placeholder={props.employees[id].assigned}
                   className="employeeUpdateInput"
                 />
