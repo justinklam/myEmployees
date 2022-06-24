@@ -18,7 +18,7 @@ const corsOptions = {
 
 // Retrieve Employees
 app.get("/api/employees", cors(corsOptions), (req, res) => {
-  console.log("get - /api/employees");
+  // console.log("get - /api/employees");
   res.setHeader("Content-Type", "application/json");
   res.status(200);
   res.send(JSON.stringify(employees, null, 2));
