@@ -11,8 +11,8 @@ const Home = (props) => {
       <div className="homeTitleContainer">
         <h1 className="homeTitle">Home</h1>
         <div className="homeWidgets">
-          <WidgetS employees={props.employees} />
           <WidgetL employees={props.employees} />
+          <WidgetS employees={props.employees} />
         </div>
       </div>
     </div>
