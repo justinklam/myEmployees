@@ -25,7 +25,6 @@ const App = () => {
     axios
       .get("//localhost:8080/api/employees")
       .then((res) => {
-        // console.log("api-data", res.data);
         setEmployees(res.data);
       })
       .catch((err) => {
