@@ -118,6 +118,90 @@ const WidgetS = (props) => {
             </button>
           </Link>
         </li>
+        <li className="widgetSmListItem">
+          <img
+            src="https://images.pexels.com/photos/2194261/pexels-photo-2194261.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt=""
+            className="widgetSmImg"
+          />
+          <div className="widgetSmUser">
+            <div className="widgetSmUsername">
+              Employee Code: {props.employees[5].code}
+            </div>
+            <div className="widgetSmUserProfession">
+              {props.employees[5].profession}
+            </div>
+          </div>
+          <Link to={"/employee/6"}>
+            <button className="widgetSmButton">
+              <VisibilityIcon className="widgetSmIcon" />
+              Display
+            </button>
+          </Link>
+        </li>
+        <li className="widgetSmListItem">
+          <img
+            src="https://images.pexels.com/photos/127028/pexels-photo-127028.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt=""
+            className="widgetSmImg"
+          />
+          <div className="widgetSmUser">
+            <div className="widgetSmUsername">
+              Employee Code: {props.employees[6].code}
+            </div>
+            <div className="widgetSmUserProfession">
+              {props.employees[6].profession}
+            </div>
+          </div>
+          <Link to={"/employee/7"}>
+            <button className="widgetSmButton">
+              <VisibilityIcon className="widgetSmIcon" />
+              Display
+            </button>
+          </Link>
+        </li>
+        <li className="widgetSmListItem">
+          <img
+            src="https://images.pexels.com/photos/96938/pexels-photo-96938.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt=""
+            className="widgetSmImg"
+          />
+          <div className="widgetSmUser">
+            <div className="widgetSmUsername">
+              Employee Code: {props.employees[7].code}
+            </div>
+            <div className="widgetSmUserProfession">
+              {props.employees[7].profession}
+            </div>
+          </div>
+          <Link to={"/employee/8"}>
+            <button className="widgetSmButton">
+              <VisibilityIcon className="widgetSmIcon" />
+              Display
+            </button>
+          </Link>
+        </li>
+        <li className="widgetSmListItem">
+          <img
+            src="https://images.pexels.com/photos/257532/pexels-photo-257532.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt=""
+            className="widgetSmImg"
+          />
+          <div className="widgetSmUser">
+            <div className="widgetSmUsername">
+              Employee Code: {props.employees[8].code}
+            </div>
+            <div className="widgetSmUserProfession">
+              {props.employees[8].profession}
+            </div>
+          </div>
+          <Link to={"/employee/9"}>
+            <button className="widgetSmButton">
+              <VisibilityIcon className="widgetSmIcon" />
+              Display
+            </button>
+          </Link>
+        </li>
       </ul>
     </div>
   );
