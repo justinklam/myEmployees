@@ -3,6 +3,7 @@ import axios from "axios";
 import "./newEmployee.css";
 
 const NewEmployee = () => {
+  const url = "//localhost:8080/api/employees/create";
   const [newEmp, setNewEmp] = useState({
     id: "",
     lastName: "",
@@ -24,33 +25,71 @@ const NewEmployee = () => {
       id: newEmp.code,
       [e.target.name]: value,
     });
-    console.log("newData---", newEmp);
+    // console.log("newEmp---", newEmp);
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios
-      .post(`//localhost:8080/api/employees/create`, newEmp)
-      // {
-      //   id: newEmp.code,
-      //   lastName: newEmp.lastName,
-      //   firstName: newEmp.firstName,
-      //   profile: newEmp.profile,
-      //   email: newEmp.email,
-      //   code: newEmp.code,
-      //   profession: newEmp.profession,
-      //   city: newEmp.city,
-      //   branch: newEmp.branch,
-      //   assigned: newEmp.assigned,
-      // })
-      .then((res) => {
-        console.log(res.data);
-      })
-      .catch(function (error) {
-        console.log(error);
-      });
-    console.log("Submitted");
+    axios({
+      method: "post",
+      url: url,
+      data: {
+        id: newEmp.code,
+        lastName: newEmp.lastName,
+        firstName: newEmp.firstName,
+        profile: newEmp.profile,
+        email: newEmp.email,
+        code: newEmp.code,
+        profession: newEmp.profession,
+        city: newEmp.city,
+        branch: newEmp.branch,
+        assigned: newEmp.assigned,
+      },
+    }).then((res) => {
+      const message = res.data;
+      console.log(message);
+    });
   };
+
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   axios
+  //     .post(url, { newEmp })
+  //     .then((res) => {
+  //       e.target.reset();
+  //       console.log("api-response", res);
+  //     })
+  //     .catch(function (error) {
+  //       console.log(error);
+  //     });
+  //   console.log("Submitted");
+  // };
+
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   axios
+  //     .post(`//localhost:8080/api/employees/create`, newEmp)
+  //     // {
+  //     //   id: newEmp.code,
+  //     //   lastName: newEmp.lastName,
+  //     //   firstName: newEmp.firstName,
+  //     //   profile: newEmp.profile,
+  //     //   email: newEmp.email,
+  //     //   code: newEmp.code,
+  //     //   profession: newEmp.profession,
+  //     //   city: newEmp.city,
+  //     //   branch: newEmp.branch,
+  //     //   assigned: newEmp.assigned,
+  //     // })
+  //     .then((res) => {
+  //       console.log(res.data);
+  //       e.target.reset();
+  //     })
+  //     .catch(function (error) {
+  //       console.log(error);
+  //     });
+  //   console.log("Submitted");
+  // };
 
   return (
     <div className="newEmployee">
