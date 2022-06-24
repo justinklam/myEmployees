@@ -56,7 +56,17 @@ const App = () => {
           </div>
         </Router>
       ) : (
-        <Loading />
+        <>
+          <Router>
+            <TopNav />
+            <div className="container">
+              <Sidebar />
+              <div className="loader">
+                <Loading />
+              </div>
+            </div>
+          </Router>
+        </>
       )}
     </>
   );
