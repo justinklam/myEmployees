@@ -21,11 +21,9 @@ const WidgetS = (props) => {
           />
           <div className="widgetSmUser">
             <div className="widgetSmUsername">
-              {/* Employee Code: F101 */}
               Employee Code: {props.employees[0].code}
             </div>
             <div className="widgetSmUserProfession">
-              {/* Drywall Installer */}
               {props.employees[0].profession}
             </div>
           </div>
@@ -44,11 +42,9 @@ const WidgetS = (props) => {
           />
           <div className="widgetSmUser">
             <div className="widgetSmUsername">
-              {/* Employee Code: F102 */}
               Employee Code: {props.employees[1].code}
             </div>
             <div className="widgetSmUserProfession">
-              {/* Drywall Installer */}
               {props.employees[1].profession}
             </div>
           </div>
@@ -67,11 +63,9 @@ const WidgetS = (props) => {
           />
           <div className="widgetSmUser">
             <div className="widgetSmUsername">
-              {/* Employee Code: F103 */}
               Employee Code: {props.employees[2].code}
             </div>
             <div className="widgetSmUserProfession">
-              {/* Drywall Installer */}
               {props.employees[2].profession}
             </div>
           </div>
@@ -90,11 +84,9 @@ const WidgetS = (props) => {
           />
           <div className="widgetSmUser">
             <div className="widgetSmUsername">
-              {/* Employee Code: F104 */}
               Employee Code: {props.employees[3].code}
             </div>
             <div className="widgetSmUserProfession">
-              {/* Drywall Installer */}
               {props.employees[3].profession}
             </div>
           </div>
@@ -113,11 +105,9 @@ const WidgetS = (props) => {
           />
           <div className="widgetSmUser">
             <div className="widgetSmUsername">
-              {/* Employee Code: F105 */}
               Employee Code: {props.employees[4].code}
             </div>
             <div className="widgetSmUserProfession">
-              {/* Drywall Installer */}
               {props.employees[4].profession}
             </div>
           </div>
