@@ -26,6 +26,7 @@
 Core:
 - JavaScript
 - React
+- Express
 - HTML
 - CSS
 
