@@ -1,6 +1,6 @@
 # myEmployees
 
-**Employee Manager** site built with JavaScript, React and HTML.
+**Employee Manager** site built with JavaScript, React, Express and CSS.
 
 ## Preview
 
